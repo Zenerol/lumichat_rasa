@@ -1,0 +1,9 @@
+# Ignore venv and cache files
+../.venv/
+*.pyc
+__pycache__/
+.rasa/
+models/
+.DS_Store
+.idea/
+.vscode/
