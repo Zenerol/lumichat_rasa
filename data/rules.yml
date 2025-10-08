@@ -468,3 +468,13 @@ rules:
     - action: utter_offer_referral
     - intent: deny
     - action: utter_ok_no_referral
+
+- rule: Respond to mood_sad p0001
+  steps:
+    - intent: mood_sad
+    - action: utter_mood_sad
+
+- rule: Respond to mood_happy p0001
+  steps:
+    - intent: mood_happy
+    - action: utter_mood_happy

@@ -46,6 +46,8 @@ intents:
 - deny
 - crisis_minimizing
 - book_appointment
+- mood_sad
+- mood_happy
    
 
 actions:
@@ -56,25 +58,32 @@ responses:
 
   utter_greet:
   - text: Hi! How can I help you today?
-  - text: Hi! Unsa imong gibati karon?
   - text: Hello! How are you feeling today?
 
   utter_thanks:
   - text: You're welcome! I'm here to help.
-  - text: Walay sapayan! Ania ra ko aron motabang.
+
 
 
   utter_goodbye:
   - text: Take care, and thank you for chatting today.
-  - text: Amping, ug salamat sa imong pag-chat karon.
 
+  utter_mood_sad/p0001:
+  - text: >
+      I’m really sorry you’re feeling sad right now. It’s okay to have those moments—feelings like that mean you’ve been trying hard.
+      You don’t have to rush yourself; little by little, things can get lighter again.
+
+  utter_mood_happy/p0001:
+  - text: >
+      That’s so nice to hear! You deserve moments like this—simple, calm, and happy.
+      I hope you keep that feeling with you today; you’ve earned it.
 
         
   utter_anxiety/p0001:
-    - text: |
-        I’m sorry you’re feeling this way. Try a simple grounding exercise: slowly look around and name five things you can see,
-        four things you can touch, three things you can hear, two things you can smell, and one thing you can taste.
-        Breathe steadily as you do it to anchor your attention in the present.
+  - text: >
+      Feeling anxious all the time can be exhausting. It’s like your mind never gives you a moment to breathe.
+      Your unease is valid—carrying constant tension doesn’t mean you’re weak, it means you’ve been under pressure for too long.
+
 
   utter_anxiety/p0002:
     - text: |
@@ -345,6 +354,152 @@ responses:
     - text: |
         Meeting new people online can feel intimidating. Prepare a few simple topics or questions in advance to ease the first moments. Planning ahead builds confidence and reduces nerves.
 
+  utter_anxiety/p0065:
+    - text: >
+        Your mind has been running nonstop and that feels exhausting. Even when nothing seems wrong, the body can stay on alert. You’re not alone in feeling this way.
+
+  utter_anxiety/p0066:
+    - text: >
+        Speaking in front of others brings a strong rush of nerves. Your body is reacting to pressure and that reaction is valid. You’re doing your best in a tough moment.
+
+  utter_anxiety/p0067:
+    - text: >
+        Waking up already anxious makes the whole day feel heavier. Carrying that feeling from the start takes a lot of strength. You deserve a gentler start to your mornings.
+
+  utter_anxiety/p0068:
+    - text: >
+        Looping thoughts make focusing extremely hard. This isn’t laziness—an anxious mind just needs space to settle. Your effort still counts even when it feels slow.
+
+  utter_anxiety/p0069:
+    - text: >
+        Comparing yourself to others can amplify self-doubt. That pressure to meet expectations weighs heavily on you. Your worth isn’t defined by anyone else’s pace.
+
+  utter_anxiety/p0070:
+    - text: >
+        Those sudden waves of fear feel intense and scary. Your body is sounding an alarm even when you’re safe. The feeling is real and it does pass.
+
+  utter_anxiety/p0071:
+    - text: >
+        Replaying moments again and again is a common anxiety loop. It shows how much you care about your relationships and how you come across. You’re being thoughtful, not defective.
+
+  utter_anxiety/p0072:
+    - text: >
+        Night feels louder for worries when everything else is quiet. Lying awake with a busy mind is draining. You deserve rest and a calmer night.
+
+  utter_anxiety/p0073:
+    - text: >
+        Changes and uncertainty can unsettle anyone. It’s natural to feel safer when things go as planned. You’re allowed to need stability.
+
+  utter_anxiety/p0074:
+    - text: >
+        Anxiety can show up through the body—tightness, shaky hands, an uneasy stomach. These sensations are uncomfortable yet common. Your body is reacting to stress, not failing you.
+
+  utter_anxiety/p0075:
+    - text: >
+        Sudden calls or notifications can trigger strong tension. Your body reacts as if something urgent is happening. It’s okay to feel startled even by small alerts.
+
+  utter_anxiety/p0076:
+    - text: >
+        Imagining the worst is a heavy habit that anxiety often creates. Those thoughts try to protect you from danger but end up tiring your mind. It’s understandable to feel worn out by it.
+
+  utter_anxiety/p0077:
+    - text: >
+        Meeting new people can feel overwhelming when anxiety takes over. Feeling tense or avoiding social events doesn’t make you unfriendly. You’re simply trying to stay comfortable.
+
+  utter_anxiety/p0078:
+    - text: >
+        Restlessness with no clear reason is a common sign of tension building up. Your body seems ready for action even when you just want to rest. It shows how alert your system has been lately.
+
+  utter_anxiety/p0079:
+    - text: >
+        Overthinking every decision can drain your energy. That fear of choosing wrong often comes from wanting to do everything right. You’re being careful, not weak.
+
+  utter_anxiety/p0080:
+    - text: >
+        Waiting for results can make anxiety spike quickly. The body reacts as if danger is coming. Feeling nervous before seeing grades is a very human response.
+
+  utter_anxiety/p0081:
+    - text: >
+        Worrying about what others think shows how much you care about connection. Anxiety can twist that care into constant fear of judgment. You still have value even when people see you differently.
+
+  utter_anxiety/p0082:
+    - text: >
+        Silence can make anxious thoughts sound louder. When there’s nothing to distract you, the mind fills the space with worry. That feeling of restlessness in quiet is completely valid.
+
+  utter_anxiety/p0083:
+    - text: >
+        Thinking about the future can bring a wave of uncertainty. Not knowing what lies ahead makes anyone uneasy. You’re feeling anxious because you care deeply about what’s next.
+
+  utter_anxiety/p0084:
+    - text: >
+        Serious or sudden messages can send the mind racing. The body instantly assumes something bad is coming. Feeling tense in those moments is a normal anxious response.
+
+  utter_anxiety/p0085:
+    - text: >
+        Being called to recite can make anyone tense. Your body reacts quickly to that pressure. It’s normal to feel nervous in front of the class.
+
+  utter_anxiety/p0086:
+    - text: >
+        Group work can feel stressful when expectations are unclear. It’s understandable to feel anxious when others depend on you. You just want to do your part well.
+
+  utter_anxiety/p0087:
+    - text: >
+        Feeling pressure from family is heavy to carry. Wanting to make them proud shows how much you care. Your feelings of worry are valid and human.
+
+  utter_anxiety/p0088:
+    - text: >
+        Crowded or hot places can trigger discomfort. Your body reacts by tensing up and feeling dizzy. It’s a common response to feeling trapped or overwhelmed.
+
+  utter_anxiety/p0089:
+    - text: >
+        Worrying about what your teacher thinks shows how responsible you are. That nervousness comes from wanting to do things right. It’s okay to feel uneasy when being observed.
+
+  utter_anxiety/p0090:
+    - text: >
+        Online classes bring their own kind of stress. Feeling anxious about your mic, camera, or connection is completely understandable. You’re not alone in that experience.
+
+  utter_anxiety/p0091:
+    - text: >
+        The pile of tasks can easily make anyone feel anxious. It’s normal to feel pressured when things keep adding up. You’re doing your best to keep up.
+
+  utter_anxiety/p0092:
+    - text: >
+        Sudden quizzes can trigger panic even for prepared students. That reaction comes from the body’s fear of surprise. Feeling tense in that moment is normal.
+
+  utter_anxiety/p0093:
+    - text: >
+        Feeling watched or judged can make anyone uneasy. Your heart speeds up because your body senses attention as pressure. You’re simply reacting to social stress.
+
+  utter_anxiety/p0094:
+    - text: >
+        Feeling shy and anxious around someone you like is very common. Your body mixes excitement with nervousness. It’s part of caring about someone’s opinion.
+
+  utter_anxiety/p0095:
+    - text: >
+        Running late often triggers a quick rush of panic. You care about being responsible and that creates pressure. Feeling tense in those moments is completely normal.
+
+  utter_anxiety/p0096:
+    - text: >
+        Oral exams can make your mind go blank. The pressure of being watched intensifies anxiety. You’re not alone—many students experience that same struggle.
+
+  utter_anxiety/p0097:
+    - text: >
+        Conflict and shouting make the body tense quickly. It’s a sign that your system is trying to protect you. Feeling nervous in those situations is natural.
+
+  utter_anxiety/p0098:
+    - text: >
+        Waiting for a reply can make anxiety build up fast. It’s easy to assume something’s wrong when someone doesn’t respond. Your worry shows how much you value connection.
+
+  utter_anxiety/p0099:
+    - text: >
+        Interviews naturally make people nervous. The pressure to perform well makes your body react strongly. It’s okay to feel that tension while waiting or speaking.
+
+  utter_anxiety/p0100:
+    - text: >
+        Struggling to understand lessons can make anxiety rise quickly. It doesn’t mean you’re not capable—it just means your mind needs more time to process. Feeling left behind in class is something many students go through.
+
+
+
   utter_depression/p0001:
   - text: Feeling empty can be a very lonely experience, and it’s a common part of
       depression. It may help to gently reconnect with your senses—listening to music,
@@ -589,6 +744,360 @@ responses:
       into tiny steps: sit up, put your feet on the floor, and drink a glass of water.
       Celebrate each small victory—no matter how minor it feels. Every effort you
       make is a sign of your strength and resilience, even if it’s just getting started.'
+
+  utter_depression/p0050:
+  - text: 
+        Feeling drained and unmotivated doesn’t mean you’re weak. 
+        Sometimes, when the mind is overwhelmed, even small things start to feel too heavy. 
+        It’s normal to lose interest in the things that once made you happy when sadness lingers for a while. 
+        Your body might just be asking for a slower pace and a bit of understanding. You deserve kindness, 
+        even on days when you can’t do much.
+
+  utter_depression/p0051:
+  - text: 
+        Feeling sad without a clear reason can be confusing. 
+        Sometimes emotions build up quietly until they become heavy to carry. 
+        It doesn’t always need an explanation to be valid. What you’re feeling is real, 
+        and it deserves understanding and rest.
+
+  utter_depression/p0052:
+  - text: 
+        Feeling unseen or forgotten can cut deeply. When loneliness lasts too long, 
+        the mind starts to believe no one cares. You still matter, even if it doesn’t feel that way right now. 
+        Your presence has value that can’t be replaced.
+
+  utter_depression/p0053:
+  - text: 
+        Wearing a smile while hurting inside takes a lot of strength. 
+        Pretending to be fine often hides how much pain you’ve been carrying. 
+        You’ve been doing your best to keep it together, even if no one sees it. 
+        That effort alone already shows resilience.
+
+  utter_depression/p0054:
+  - text: 
+        Losing focus and motivation in school doesn’t make you a failure. 
+        It’s hard to study when your heart and mind feel heavy. 
+        Your worth isn’t measured by your grades. You’re allowed to rest when things feel too much.
+
+  utter_depression/p0055:
+  - text: >
+        Pulling away from others doesn’t mean you don’t care. 
+        It can be your mind’s way of trying to protect itself from exhaustion. 
+        You’re not being rude for needing space. You’re simply trying to find peace in the quiet.
+
+  utter_depression/p0056:
+  - text: >
+        Tears come easily when emotions pile up inside. 
+        Crying doesn’t make you weak—it’s your body’s way of releasing pain. 
+        You’ve been holding so much in, and it’s okay to let it out. Let yourself feel without judgment.
+
+  utter_depression/p0057:
+  - text: >
+        Feeling worthless or not enough is a painful weight to carry. 
+        It’s easy to forget your own value when sadness takes over. 
+        You still have worth even when you can’t see it. 
+        You’ve made it through days that felt impossible before.
+
+  utter_depression/p0058:
+  - text: >
+        Guilt often follows people who care too deeply. 
+        You blame yourself because you want to do things right. 
+        But you don’t have to apologize for struggling. 
+        You’re human, and being kind to yourself matters just as much.
+
+  utter_depression/p0059:
+  - text: >
+        Losing appetite can be the body’s quiet cry for help. 
+        When sadness dulls your senses, even food loses its meaning. 
+        It doesn’t mean you’re broken—it’s a sign of how tired your spirit feels. 
+        Your body is asking for gentle care.
+
+  utter_depression/p0060:
+  - text: >
+        Sleepless nights can feel endless when your thoughts won’t stop. 
+        The silence makes sadness sound louder. 
+        You’re not alone in those late hours of restlessness. 
+        Your mind is simply struggling to find calm.
+
+  utter_depression/p0061:
+  - text: >
+        Making mistakes doesn’t mean you’re a disappointment. 
+        Everyone falters when life feels heavy. 
+        You’re learning even when you feel stuck. 
+        Give yourself the same patience you’d offer a friend.
+
+  utter_depression/p0062:
+  - text: >
+        When life feels meaningless, it’s a sign you’ve been running on empty for too long. 
+        You’ve been carrying too much without enough peace in between. 
+        It’s okay to not have answers right now. 
+        Simply existing is already enough for today.
+
+  utter_depression/p0063:
+  - text: >
+        Forcing yourself to look fine while hurting takes so much energy. 
+        You’ve been strong for too long, and it’s okay to admit that you’re tired. 
+        Rest isn’t giving up—it’s part of healing. You deserve a pause without guilt.
+
+  utter_depression/p0064:
+  - text: >
+        Feeling disconnected from who you used to be can be frightening. 
+        You’ve changed because of everything you’ve endured. You’re still you, 
+        just growing through a painful chapter. It’s okay to not recognize yourself for a while.
+
+  utter_depression/p0065:
+  - text: >
+        Seeing others happy while you’re struggling can make sadness feel deeper. 
+        It doesn’t mean you’re ungrateful—it just hurts to feel left behind. 
+        You’re not alone in that quiet envy. You’re still moving, even if slowly.
+
+  utter_depression/p0066:
+  - text: >
+        Starting the day with sadness can make every step feel heavier. 
+        Even simple tasks look like mountains when the mind is tired. 
+        Your body is asking for gentleness, not more pressure. 
+        It’s okay to move slowly until your strength returns.
+
+  utter_depression/p0067:
+  - text: >
+        Feeling distant in the middle of company is a quiet kind of pain. 
+        Smiles and laughs can happen while the heart stays flat. 
+        You’re doing your best to show up even when joy feels far away. 
+        Your effort still matters even if it doesn’t feel the same.
+
+  utter_depression/p0068:
+  - text: >
+        The weight of believing you are a burden is exhausting. 
+        That belief grows when energy is low and self-trust is thin. 
+        Your presence is not a problem to solve. 
+        You are allowed to take up space without apology.
+
+  utter_depression/p0069:
+  - text: >
+        Comparing your life to polished posts drains the spirit. 
+        Screens show highlights while hiding the heavy parts. 
+        Feeling small after scrolling is a human reaction to a filtered world. 
+        Your path is real even when it feels slower.
+
+  utter_depression/p0070:
+  - text: >
+        Gloomy weather can echo the heaviness inside. 
+        The body moves slower and the heart feels dimmer on gray days. 
+        There is nothing wrong with needing more warmth and comfort then. 
+        Your pace can match the sky without guilt.
+
+  utter_depression/p0071:
+  - text: >
+        Homesickness pulls at the heart in quiet moments. 
+        Distance from family makes ordinary days feel colder. 
+        Missing home does not mean you are weak; it means you love deeply. 
+        You’re allowed to carry that love while you keep going.
+
+  utter_depression/p0072:
+  - text: >
+        After a breakup, the world can lose its color for a while. 
+        Routines feel unfamiliar and memories visit without warning. 
+        When routines pause, emptiness can grow louder. 
+        Structure keeps the mind steady, and without it the hours stretch. 
+        Needing direction does not mean you are broken. 
+        It simply means your heart is looking for footing.
+
+  utter_depression/p0073:
+  - text: >
+      Sometimes when everything slows down, the silence can feel heavy. It’s normal to feel lost when your usual routine pauses.
+      You’re not useless—your worth isn’t measured by how busy you are. Even quiet days still have meaning.     
+
+  utter_depression/p0074:
+  - text: >
+        Numbness can be the mind’s way of protecting itself. 
+        When feelings have been too strong for too long, they sometimes go quiet. 
+        Even if the world feels far away, you are still here. 
+        Your presence has worth beyond what you can feel.
+
+  utter_depression/p0075:
+  - text: >
+        Irritability can be sadness wearing a louder voice. 
+        Small sparks catch easily when the heart is already tired. 
+        Regret after snapping shows the kind person underneath the storm. 
+        You’re not a bad person for having a short fuse right now.
+
+  utter_depression/p0076:
+  - text: >
+        Hopelessness blurs the future and shrinks the present. 
+        Dreams feel distant when energy is low and days blend together. 
+        Your value is not decided by timelines or fast results. 
+        Existing through hard seasons is still a form of courage.
+
+  utter_depression/p0077:
+  - text: >
+        Guilt for resting grows in a culture that praises nonstop hustle. 
+        The body asks for pause, and the mind calls it failure. 
+        Rest is not proof of laziness; it is proof you are human. 
+        You deserve recovery as much as achievement.
+
+  utter_depression/p0078:
+  - text: >
+        Silence toward messages often hides a heavy heart. 
+        Even tapping a reply can feel like lifting a weight. 
+        Needing distance does not erase your care for people. 
+        Protecting your little energy is still an act of honesty.
+
+  utter_depression/p0079:
+  - text: >
+        Feeling behind can make every step shake with doubt. 
+        Milestones arrive at different times, even for people walking the same road. 
+        Your pace is not a flaw to fix. You are still moving, even when movement feels invisible.
+
+  utter_depression/p0080:
+  - text: >
+        Grief settles into ordinary days and colors them quietly. 
+        Missing someone is a way love continues after goodbye. 
+        The heaviness that returns on certain dates shows how much they matter. 
+        Your memories are a soft place where they still exist with you.
+
+  utter_depression/p0081:
+  - text: >
+        Nights can bring a different kind of sadness. 
+        The quiet makes the mind louder, 
+        and emotions grow heavier when the world sleeps. 
+        You’ve been carrying more than you realize. 
+        It’s okay to feel the weight of the night.
+
+  utter_depression/p0082:
+  - text: >
+        Hiding pain behind smiles takes strength you rarely get credit for. 
+        Pretending to be fine is exhausting, 
+        yet you keep doing it to protect others. 
+        You deserve the same care you give away so easily. 
+        You don’t have to perform your strength every day.
+
+  utter_depression/p0083:
+  - text: >
+        Achievements lose their shine when sadness stays too long. 
+        It’s hard to celebrate when your heart feels empty. 
+        Even when joy doesn’t arrive, your effort still counts. 
+        You’re doing your best in a season that’s been unkind.
+
+  utter_depression/p0084:
+  - text: >
+        Sudden sadness can hit without reason. 
+        Your emotions move like waves—sometimes gentle, sometimes sharp. 
+        Feeling heavy in random moments doesn’t make you weak. 
+        It shows how deeply you’ve been enduring quietly.
+
+  utter_depression/p0085:
+  - text: >
+        Losing drive for school is a common sign of exhaustion. 
+        When your heart and mind are worn out, motivation fades. 
+        You are not lazy—you’re tired from carrying too much pressure. 
+        It’s okay to slow down and breathe again.
+
+  utter_depression/p0086:
+  - text: >
+        Feeling forgotten by friends can leave an invisible ache. 
+        You want to be noticed, not out of neediness, but to feel that you still matter. 
+        Your longing to be remembered means you care deeply. 
+        You deserve people who check in without being asked.
+
+  utter_depression/p0087:
+  - text: >
+        Regrets have a way of replaying when you’re down. 
+        The mind loops on mistakes until they become heavier than they were. 
+        You’ve already punished yourself enough. 
+        What you need now is gentle forgiveness.
+
+  utter_depression/p0088:
+  - text: >
+        Feeling valued only when useful can be painful. 
+        You are more than your help or your hard work. 
+        Your worth doesn’t disappear when you rest. 
+        You deserve love simply for existing, not just for what you give.
+
+  utter_depression/p0089:
+  - text: >
+        Missing your old self means you’re aware of how much life has changed. 
+        You’ve been through moments that reshaped you, not ruined you. 
+        The person you were is still part of who you are. 
+        Change doesn’t erase your worth.
+
+  utter_depression/p0090:
+  - text: >
+        Nostalgia can be both comforting and painful. 
+        Happy memories can sting when the present feels dull. 
+        Missing the past shows how deeply you once felt joy. 
+        It’s okay to hold those moments close while you heal.
+
+  utter_depression/p0091:
+  - text: >
+        Emotional distance can build without warning. 
+        You might feel safe but still disconnected, and that’s part of exhaustion too. 
+        Wanting closeness again doesn’t make you weak. 
+        It means your heart still knows what it needs.
+
+  utter_depression/p0092:
+  - text: >
+        Feeling empty after busy days shows how much you’ve been running on routine instead of rest. 
+        Accomplishments can’t always fill emotional gaps. 
+        You’re surviving, and that’s still something to be proud of. 
+        Your peace matters more than productivity.
+
+  utter_depression/p0093:
+  - text: >
+        Self-image pain can drain your confidence little by little. 
+        It’s hard to look at yourself kindly when sadness clouds your reflection. 
+        You are not defined by mirrors or comparisons. 
+        There is quiet beauty in your existence, even when you can’t see it.
+
+  utter_depression/p0094:
+  - text: >
+        Hiding emotions to avoid judgment is a common shield. 
+        You’ve learned to stay quiet because being vulnerable feels unsafe. 
+        But even silence is a way your heart asks for care. 
+        You’re not wrong for protecting yourself.
+
+  utter_depression/p0095:
+  - text: >
+        When sadness stretches time, every day feels endless. 
+        The hours blend and lose meaning. 
+        You’re not lazy for moving slowly through long days. 
+        You’re adjusting to a rhythm that pain has forced on you.
+
+  utter_depression/p0096:
+  - text: >
+        School can feel like a fog when your heart is heavy. 
+        You show up physically but feel invisible inside. 
+        The strength it takes to attend despite emptiness is often unseen. 
+        That quiet effort already says you’re trying.
+
+  utter_depression/p0097:
+  - text: >
+        Music reaches emotions that words can’t. 
+        Songs can open memories or feelings you’ve tucked away. 
+        When melodies bring tears, it’s because they remind your heart it can still feel. 
+        That sensitivity is not weakness—it’s depth.
+
+  utter_depression/p0098:
+  - text: >
+        Even simple questions like “are you okay?” can feel like pressure. 
+        It’s hard to explain sadness when words fall short. 
+        You protect yourself by saying “I’m fine,” even when you’re not. 
+        That’s your way of surviving social spaces gently.
+
+  utter_depression/p0099:
+  - text: >
+        Feeling unnoticed after trying so hard can leave deep disappointment. 
+        Recognition matters because it tells you your effort counts. 
+        You’re not wrong for wanting to be seen. 
+        You deserve appreciation, not just expectation.
+
+  utter_depression/p0100:
+  - text: >
+        Feeling like you’re only existing is a quiet kind of exhaustion. 
+        Life becomes a series of days that blur into one. 
+        You’ve been surviving instead of living, and that’s okay for now. 
+        Existing is proof of your endurance in the storm.
+
+
   utter_stress/p0001:
   - text: Feeling overwhelmed is a common experience, especially when you have many
       tasks at once. It can help to write down your responsibilities, then pick one
@@ -761,6 +1270,212 @@ responses:
   utter_stress/p0049:
   - text: Jaw clenching is a common stress habit. Gentle jaw stretches and massaging
       your cheeks can help release tension and protect your teeth.
+
+  utter_stress/p0050:
+  - text: >
+      Seeing a full schedule can tense the body before the day even starts. The mind tries to plan everything at once and the chest tightens. You’ve been carrying a lot just by looking ahead. Your effort to organize things already shows determination.
+
+  utter_stress/p0051:
+  - text: >
+      Piled deadlines can make the world feel narrow and air feel thin. The weight of simultaneous submissions presses on your focus and energy. Your stress is a natural response to too much, too soon. You’re doing what you can in a crowded moment.
+
+  utter_stress/p0052:
+  - text: >
+      Consecutive tasks leave little room to breathe. When new work arrives without pause, tension builds like a knot. Your body is asking for space even as the list grows. That strain doesn’t mean you’re weak—it means you’re human.
+
+  utter_stress/p0053:
+  - text: >
+        Stress that lingers into weekends blurs rest and work. Even quiet hours feel busy when your mind won’t switch off. You’ve been on alert for too long. It’s understandable that free time doesn’t feel free yet.
+
+  utter_stress/p0054:
+  - text: >
+        Group tasks can add pressure where coordination is thin. Being relied on without support drains energy quickly. Your tension reflects the load you’ve been holding. Wanting teamwork to feel lighter is completely valid.
+
+  utter_stress/p0055:
+  - text: >
+        Long commutes take energy before the day begins. Traffic and crowded rides tighten the body and shorten patience. Arriving already tired doesn’t mean you failed the day. It shows how much you endure just to show up.
+
+  utter_stress/p0056:
+  - text: >
+        Tight budgets add a steady layer of pressure. Thinking about allowances, fees, and daily costs pulls focus from study. Your stress comes from responsibility, not weakness. You’ve been trying to make things work with limited room.
+
+  utter_stress/p0057:
+  - text: >
+        Paperwork and campus errands can drain more than expected. Lines, docs, and signatures stack stress on top of study. Feeling heavier from logistics is a real load. You’re handling tasks that don’t always get noticed.
+
+  utter_stress/p0058:
+  - text: >
+        Technical issues hit hardest near deadlines. Slow devices and unstable connections shake concentration and patience. Your stress rises because effort keeps getting blocked. The struggle you feel is a normal response to lost progress.
+
+  utter_stress/p0059:
+  - text: >
+        Multitasking scatters attention and tightens the body. Switching lanes too often steals energy and clarity. Feeling overwhelmed by many tabs and tasks is natural. You’ve been asked to stretch beyond a calm pace.
+
+  utter_stress/p0060:
+  - text: >
+        Preparing to present can tense muscles and thoughts alike. Details, scripts, and timing crowd the mind with pressure. Your stiffness shows how much you care about doing well. That care has been working overtime.
+
+  utter_stress/p0061:
+  - text: >
+        Sudden changes pull the rug from under a careful plan. When schedules shift, the body locks up trying to adjust. Your tension reflects the cost of reworking your flow. Stability matters for your calm and focus.
+
+  utter_stress/p0062:
+  - text: >
+        Unchecked boxes can feel louder than finished tasks. Falling behind pulls at your chest and narrows your view. Your stress is the echo of standards you’re trying to meet. The effort you’ve already given still counts.
+
+  utter_stress/p0063:
+  - text: >
+        Balancing home responsibilities with study stretches energy thin. The back-and-forth between chores and academics wears down focus. Your heaviness is the sign of too many roles at once. You’ve been doing more than what’s visible.
+
+  utter_stress/p0064:
+  - text: >
+        Hard lessons strain confidence and patience. Not following a topic right away tenses the mind and body. Your stress comes from wanting to understand, not from failure. It’s okay that this part feels heavier.
+
+  utter_stress/p0065:
+  - text: >
+      Disorganization turns small tasks into bigger hills. Scattered notes and files push stress higher with every search. Your unease shows a real need for order to feel safe. Wanting clarity is not being picky—it’s caring for your focus.
+
+  utter_stress/p0066:
+  - text: >
+      Waiting on replies stalls progress and tightens the chest. Silence in group chats adds weight to your timeline. Your stress carries the burden of moving things alone. It makes sense that coordination feels heavy right now.
+
+  utter_stress/p0067:
+  - text: >
+            Racing the clock makes the whole body tense. Rushing from task to task shrinks patience and breath. Your day feeling heavy after being late is a real effect. You’ve been sprinting on limited energy.
+
+  utter_stress/p0068:
+  - text: >
+            High expectations press like a steady hand on the shoulder. Proving yourself again and again wears down the spirit. Your tension reflects the weight of being measured often. You’re carrying more than most people see.
+
+  utter_stress/p0069:
+  - text: >
+            Saying yes too often stretches you past your limits. Taking on extra work to avoid guilt builds hidden pressure. Your stress is a signal that your load is full. It’s valid to feel tight when the list keeps growing.
+
+  utter_stress/p0070:
+  - text: >
+        Loud surroundings can wear down patience fast. Constant noise keeps your mind tense even when you try to focus. Feeling irritated in that chaos is a natural reaction. Your body is simply craving peace and quiet.
+
+  utter_stress/p0071:
+  - text: >
+        Thinking about the future can tighten your chest in silence. Pressure grows when everyone else seems certain. Your stress comes from caring about where you’re headed. It’s okay to not have every answer yet.
+
+  utter_stress/p0072:
+  - text: >
+        Forgetting things shakes confidence quickly. The mind blanks out when stress builds too high. Your tension shows how hard you try to remember every detail. You’re not careless—you’re overwhelmed.
+
+  utter_stress/p0073:
+  - text: >
+        Conflict between classmates disturbs focus more than noise. The energy in the room shifts and the body braces for tension. Your unease is proof that harmony matters to you. Wanting peace isn’t weakness—it’s awareness.
+
+  utter_stress/p0074:
+  - text: >
+        Unstable connections test patience in ways others don’t see. Lag and disconnections break momentum and spark frustration. Your stress is the echo of wanting things to go right. It’s valid to feel on edge while trying to stay connected.
+
+  utter_stress/p0075:
+  - text: >
+        Being ignored in conversation adds invisible weight. Repeating yourself drains both time and emotion. Your stress shows how much you want to be understood. That need is a normal human response.
+
+  utter_stress/p0076:
+  - text: >
+        Exams compress pressure into a single hour. The silence of the room makes every thought louder. Feeling tense even when you studied hard is common. Your body just reacts to being tested again and again.
+
+  utter_stress/p0077:
+  - text: >
+        Overlapping tasks from multiple teachers pile up like waves. It’s hard to keep pace when everything arrives together. Your tension builds because you care about doing things right. It’s okay that your mind feels pulled in many directions.
+
+  utter_stress/p0078:
+  - text: >
+        Physical discomfort deepens mental fatigue. Sitting for hours or staring at screens ties stress into your muscles. The aches you feel are your body asking for pause. You’ve been enduring more than you admit.
+
+  utter_stress/p0079:
+  - text: >
+        Comparisons from others dig into your confidence. Stress rises when achievement turns into competition. Your heaviness comes from being measured unfairly. You are growing at your own rhythm and that’s still progress.
+
+  utter_stress/p0080:
+  - text: >
+        Constant notifications keep your brain in alert mode. Each ping pulls your focus and adds another drop of tension. It’s natural to feel crowded by messages. Your mind simply wants breathing space.
+
+  utter_stress/p0081:
+  - text: >
+        Leadership carries invisible pressure. Guiding others while staying calm drains energy quickly. Your stress comes from responsibility, not failure. The care you put into leading is already enough.
+
+  utter_stress/p0082:
+  - text: >
+        Words slip away when stress locks your throat. The harder you try to explain, the tighter it feels. Your frustration shows how much you want to be heard clearly. That effort alone deserves patience.
+
+  utter_stress/p0083:
+  - text: >
+        Bad news can ripple through your whole system. It shifts your focus and tightens your body before you can think. Feeling heavy after hearing something sad is natural. Your mind is just reacting to empathy and care.
+
+  utter_stress/p0084:
+  - text: >
+        Raised voices trigger alert inside the body. The sound of shouting sends your system into defense. Feeling tense in that noise doesn’t mean you’re weak. It’s your body’s way of seeking safety.
+
+  utter_stress/p0085:
+  - text: >
+        Losing control over plans shakes your stability. Stress rises when outcomes depend on others. Your unease is the body’s way of asking for certainty. It’s okay to want things predictable sometimes.
+
+  utter_stress/p0086:
+  - text: >
+        Speaking in another language under watchful eyes can tighten every muscle. The fear of mistakes turns learning into tension. Your nervousness is a sign of effort, not failure. You’re still brave for trying aloud.
+
+  utter_stress/p0087:
+  - text: >
+        Being rushed squeezes patience out of the moment. Pressure from others forces your body into panic mode. Your irritation comes from needing time to think safely. That’s a fair need, not a flaw.
+
+  utter_stress/p0088:
+  - text: >
+        Missing goals scratches deeply at motivation. Stress grows when results don’t match your effort. You’re not failing—you’re experiencing delay. Progress still exists even when it feels invisible.
+
+  utter_stress/p0089:
+  - text: >
+        Carrying others’ responsibilities stacks silent weight on your shoulders. The more you help, the thinner your energy spreads. Your stress is proof that you care too much to let things fall. You’re allowed to rest from being the strong one.
+    
+  utter_stress/p0090:
+  - text: >
+      Home tension can tighten your chest more than any class. The sounds of conflict fill the air with pressure you didn’t ask for. Feeling uneasy in that space is completely normal. You’re reacting to stress that belongs to others, not your fault.
+
+  utter_stress/p0091:
+  - text: >
+        Forgetting or losing things triggers instant stress. The mind rushes through worst-case thoughts before calming down. That panic is your system protecting what matters to you. You’re not careless—just overloaded.
+
+  utter_stress/p0092:
+  - text: >
+        Being misunderstood creates deep frustration. You try to explain, yet the meaning slips through. The tension you feel is the body’s way of seeking clarity. It’s okay to feel drained when you’re not being heard.
+
+  utter_stress/p0093:
+  - text: >
+        Too many notifications keep your brain alert and tired. The constant buzz of updates steals your quiet moments. Your stress rises because you care about staying responsible. It’s okay to slow down your responses sometimes.
+
+  utter_stress/p0094:
+  - text: >
+        Failed plans shake the order you worked hard to build. Disappointment after effort is a real emotional hit. Your stress shows how much heart you give to what you do. Change doesn’t erase the value of your intent.
+
+  utter_stress/p0095:
+  - text: >
+        Waiting for results makes time feel heavier. The uncertainty stretches your nerves thin. Your worry shows how invested you are in what you’ve done. It’s normal to feel tense when the outcome is out of your hands.
+
+  utter_stress/p0096:
+  - text: >
+        Memorizing under pressure burns both energy and patience. Your mind fights to keep control over every detail. The tension you feel is proof of how hard you’re trying. It’s okay to pause before diving back in.
+
+  utter_stress/p0097:
+  - text: >
+        Feeling unseen after giving effort weighs down motivation. You want acknowledgment not for pride, but for proof your work mattered. Your stress stems from care, not ego. You’re allowed to wish to be noticed.
+
+  utter_stress/p0098:
+  - text: >
+        Heat exhausts more than just the body—it drains focus too. Irritability grows when the air itself feels heavy. Your frustration isn’t attitude; it’s fatigue. The weather really does add to your stress.
+
+  utter_stress/p0099:
+  - text: >
+        Family gatherings can feel like hidden exams. Questions and comparisons stir quiet pressure inside you. Your stress is the echo of wanting to feel accepted. It’s okay to step back when the noise gets too much.
+
+  utter_stress/p0100:
+  - text: >
+        Rest that doesn’t feel restful leaves you caught between tired and wired. The body lies down but the mind keeps racing. Your unease shows how long you’ve been on alert. True rest will come once your mind feels safe again.
+
+
   utter_academic_pressure/p0001:
   - text: Feeling the weight of everyone’s expectations can be overwhelming, especially
       when it feels like your self-worth depends on your academic achievements. Remember
@@ -1005,6 +1720,216 @@ responses:
   - text: Making mistakes in front of others can feel embarrassing, but remember that
       everyone makes errors while learning. Mistakes are opportunities to grow, and
       your classmates likely understand more than you think.
+
+  utter_academic_pressure/p0050:
+  - text: >
+        Grades can start to feel like proof of your worth. Each number adds pressure instead of pride. Your fear of failing comes from caring too deeply. You’re doing your best even when perfection feels expected.
+
+  utter_academic_pressure/p0051:
+  - text: >
+        High expectations from teachers can weigh like unseen chains. You carry not just your goals, but theirs too. That tension comes from respect and responsibility. It’s okay to admit that being “the reliable one” feels heavy.
+
+  utter_academic_pressure/p0052:
+  - text: >
+        Stacked requirements blur your sense of rest. Every task begins to blend into another. The exhaustion you feel is a sign of effort, not failure. You’ve been keeping up in a storm of deadlines.
+
+  utter_academic_pressure/p0053:
+  - text: >
+       Constant competition turns learning into survival. Comparing grades slowly eats away at motivation. You’re allowed to learn without racing anyone. Your worth isn’t built on ranks or recognition.
+
+  utter_academic_pressure/p0054:
+  - text: >
+        Parental judgment can hit harder than low scores. Fear of disappointing them adds invisible pressure to every grade. That anxiety doesn’t mean you’re ungrateful—it means you care too much. Your effort is still worth pride, even in silence.
+
+  utter_academic_pressure/p0055:
+  - text: >
+        Maintaining a scholarship brings a quiet fear of loss. Every exam feels like it decides your future. The weight you carry is the cost of opportunity. You deserve compassion while you fight to keep it.
+
+  utter_academic_pressure/p0056:
+  - text: >
+        Exam weeks turn classrooms into battlegrounds. Focus fades when every subject demands attention at once. Your tension is a natural reaction to overload. You’re not alone in feeling squeezed by schedules.
+
+  utter_academic_pressure/p0057:
+  - text: >
+        Strict environments can freeze confidence. Raised voices and harsh tones close your focus instead of building it. Your nervousness is not defiance—it’s sensitivity. You’re reacting to pressure, not weakness.
+
+  utter_academic_pressure/p0058:
+  - text: >
+        Being everyone’s go-to classmate drains invisible energy. Helping others doesn’t mean losing yourself. Your tiredness comes from generosity without rest. It’s okay to step back without guilt.
+
+  utter_academic_pressure/p0059:
+  - text: >
+        Not understanding lessons right away doesn’t mean failure. The mind can’t absorb under pressure. That tension shows how much you want to learn. You’re still capable even when things feel unclear.
+
+  utter_academic_pressure/p0060:
+  - text: >
+        Grade announcements make hearts race more than tests. The wait for validation is its own kind of exam. Your nerves mean you care, not that you’re weak. Numbers can never capture the full effort behind them.
+
+  utter_academic_pressure/p0061:
+  - text: >
+        Seeing others study nonstop creates false guilt. Your worth isn’t measured by sleeplessness. You’re allowed to rest without falling behind. Constant pressure doesn’t equal success.
+
+  utter_academic_pressure/p0062:
+  - text: >
+        Recitations feel like spotlights on every thought. The tension in your body shows how alert you are. Being nervous doesn’t mean unprepared—it means you care about doing well. That care already proves commitment.
+
+  utter_academic_pressure/p0063:
+  - text: >
+        Balancing subjects feels like juggling heavy books. Focus spreads thin when every class demands top energy. Feeling tired doesn’t mean you’re weak. You’ve simply reached the edge of your capacity.
+
+  utter_academic_pressure/p0064:
+  - text: >
+       Representing others brings both pride and pressure. The fear of letting people down weighs on your shoulders. Your worry means you care deeply about your role. You’re allowed to lead imperfectly and still be enough.
+
+  utter_academic_pressure/p0065:
+  - text: >
+        Unclear instructions trap students in confusion. You’re working hard while trying to guess expectations. That frustration is proof of your dedication. The stress isn’t from laziness—it’s from unclear guidance.
+
+  utter_academic_pressure/p0066:
+  - text: >
+        Watching others succeed faster can sting quietly. It’s hard to cheer while comparing your own timeline. You’re not behind—you’re on your own path. Growth doesn’t need to race anyone.
+
+  utter_academic_pressure/p0067:
+  - text: >
+        Sudden recitations startle the system. The blank moments aren’t signs of failure—they’re stress responses. Your mind freezes because it’s trying to stay safe. That pause is normal, not embarrassing.
+
+  utter_academic_pressure/p0068:
+  - text: >
+        Sleep loss chips away at patience and focus. Fatigue makes simple lessons feel impossible. Your exhaustion shows your persistence, not weakness. You deserve a moment to breathe again.
+
+  utter_academic_pressure/p0069:
+  - text: >
+        Trying to impress teachers builds silent tension. Pleasing authority becomes a habit that empties your joy. You don’t need to perform to deserve respect. Your sincerity in learning is already enough.
+
+  utter_academic_pressure/p0070:
+  - text: >
+       Losing your spot on the honor list can sting deeply. The effort you gave doesn’t vanish just because recognition did. Your worth isn’t reduced by rank. You’re still learning, still growing, still valid.
+
+  utter_academic_pressure/p0071:
+  - text: >
+        Grades that fall slightly lower can feel like heavy blows. It’s painful when numbers decide how capable you feel. Your anxiety is proof of dedication, not failure. One dip doesn’t define your value as a student.
+
+  utter_academic_pressure/p0072:
+  - text: >
+        Being expected to know everything drains even the brightest minds. Carrying others’ questions while managing your own is exhausting. Your fatigue is not a flaw—it’s a boundary being crossed. You’ve already given more than enough.
+
+  utter_academic_pressure/p0073:
+  - text: >
+        Focus fades when the mind is stretched too thin. Studying under stress turns reading into noise. You’re not lazy for losing concentration—you’re exhausted. The pause your mind takes is a quiet form of self-protection.
+
+  utter_academic_pressure/p0074:
+  - text: >
+        Representing your school brings both pride and tension. The pressure to perform turns excitement into anxiety. You carry not just your skills, but everyone’s hopes too. That weight doesn’t make you weak—it proves you care.
+
+  utter_academic_pressure/p0075:
+  - text: >
+        Online submissions turn simple tasks into nerve tests. Watching upload bars crawl feels like waiting for judgment. Your stress is valid—it’s technology mixing with pressure. You’ve done your best even through lag and panic.
+
+  utter_academic_pressure/p0076:
+  - text: >
+        Balancing academics with organization duties stretches your limits. Your tiredness is the cost of responsibility, not lack of strength. You’re holding more than one role with care. It’s okay to feel heavy while doing both.
+
+  utter_academic_pressure/p0077:
+  - text: >
+        Family comparisons quietly bruise confidence. Being measured against siblings turns love into pressure. You’re your own person with your own pace. Your path doesn’t have to mirror anyone else’s.
+
+  utter_academic_pressure/p0078:
+  - text: >
+        Seeing classmates finish ahead builds silent panic. The rush to catch up steals your calm. You’re not slow—you’re pacing yourself through real fatigue. Progress still counts even if unseen.
+
+  utter_academic_pressure/p0079:
+  - text: >
+        Attendance anxiety isn’t about discipline—it’s about fear of consequences. Every roll call feels like judgment. You’re trying your best to show up despite stress. That effort deserves recognition too.
+
+  utter_academic_pressure/p0080:
+  - text: >
+        Group projects turn stressful when teamwork turns one-sided. Carrying others’ weight builds resentment and exhaustion. Your frustration is valid—you just want fairness. You deserve support, not burnout.
+
+  utter_academic_pressure/p0081:
+  - text: >
+        Fast-paced lessons make even quick thinkers stumble. The race to keep up replaces understanding with panic. Your struggle doesn’t mean you’re behind—it means you’re human. Learning needs space, not speed.
+
+  utter_academic_pressure/p0082:
+  - text: >
+        Comparison eats away at confidence quietly. Seeing others excel can twist motivation into pressure. Your journey doesn’t lose value because someone’s seems smoother. You’re still learning at your own rhythm.
+
+  utter_academic_pressure/p0083:
+  - text: >
+        Motivation fades when stress becomes routine. The emptiness you feel is a symptom of burnout, not laziness. You’ve been running too long without pause. Your mind is asking for rest, not blame.
+
+  utter_academic_pressure/p0084:
+  - text: >
+        Maintaining a reputation takes more energy than most realize. Constantly proving yourself steals your peace. You don’t have to be perfect to be respected. The real strength is showing up, not staying flawless.
+
+  utter_academic_pressure/p0085:
+  - text: >
+        Missed deadlines trigger guilt sharper than scolding. Forgetfulness under pressure is not carelessness—it’s fatigue. Your stress reflects how much you try to hold together. You’re allowed to reset without shame.
+
+  utter_academic_pressure/p0086:
+  - text: >
+        Speaking in front of others brings natural tension. The shaking and nervousness show that you care about doing well. Leadership doesn’t require being fearless. You’re already brave for standing up there.
+
+  utter_academic_pressure/p0087:
+  - text: >
+        Complex formulas can turn curiosity into stress. Confusion doesn’t mean failure—it’s part of learning. The effort you give each time is still progress. Patience with yourself is part of mastery.
+
+  utter_academic_pressure/p0088:
+  - text: >
+        Being overlooked after giving effort cuts deeper than criticism. Recognition matters because it tells you your work counts. Your feelings are real—being unnoticed hurts. You still matter, even in silence.
+
+  utter_academic_pressure/p0089:
+  - text: >
+        Limited time before exams tightens the whole body. The rush to absorb everything leaves no room to breathe. Your exhaustion is not weakness—it’s overextension. You’re doing more than enough right now.
+
+  utter_academic_pressure/p0090:
+  - text: >
+        Facing defense panels can feel like walking into a spotlight. Each question feels heavier than it is. The nerves you feel show passion, not weakness. You’ve reached this stage through real work and heart.
+
+  utter_academic_pressure/p0091:
+  - text: >
+        Group grades put quiet pressure on leaders. Responsibility spreads but the worry stays with one person. You’ve been managing more than you should alone. Your care is admirable even if unseen.
+
+  utter_academic_pressure/p0092:
+  - text: >
+        Midterms drain focus like a long-distance race. The weight of half-finished lessons and deadlines builds up. Feeling tired halfway through doesn’t mean you’re failing. You’re pacing yourself through the toughest part.
+
+  utter_academic_pressure/p0093:
+  - text: >
+        Teacher-student distance can create silent pressure. Respect turns into anxiety when you fear mistakes. Your nervousness is natural—it comes from wanting to do right. You’re still allowed to ask for guidance.
+
+  utter_academic_pressure/p0094:
+  - text: >
+        Dropping from the top can feel like falling through pride itself. The sadness you feel is valid—it’s loss, not failure. You haven’t lost your worth, only your rank. You can still rise without rushing.
+
+  utter_academic_pressure/p0095:
+  - text: >
+        Slow group progress builds frustration quickly. You care about the output, but others move differently. Your stress shows commitment, not control. You’ve been trying to keep things afloat.
+
+  utter_academic_pressure/p0096:
+  - text: >
+        Finals squeeze the last bit of strength from tired students. The weight of closing tasks leaves little space to breathe. Your exhaustion is proof of endurance. You’re closer to finishing than you think.
+
+  utter_academic_pressure/p0097:
+  - text: >
+        Watching classmates graduate ahead hits quietly. You grieve time lost while feeling proud of them. Your path is delayed, not denied. You’re still moving, and that movement matters.
+
+  utter_academic_pressure/p0098:
+  - text: >
+        Academic contests mix honor with fear. Representing the school can turn pride into panic. Your stress shows deep responsibility. You’re allowed to feel both proud and pressured.
+
+  utter_academic_pressure/p0099:
+  - text: >
+        Seeing better outputs from others can bruise self-worth. The mind compares before it can stop itself. Your sadness doesn’t erase your effort. You’re still learning with every try.
+
+  utter_academic_pressure/p0100:
+  - text: >
+        Burnout is the body’s way of asking for pause. Endless deadlines and sleepless nights take their toll.
+        You’ve endured more than you admit. You deserve a gentler pace moving forward.
+
+
+
+
+
   utter_relationship_issues/p0001:
   - text: Constant fighting in a relationship can be emotionally draining and affect
       other parts of your life. It's important to take a step back and give yourself
@@ -1244,6 +2169,261 @@ responses:
   - text: Being constantly blamed can erode your self-esteem. Express how this makes
       you feel and ask to share responsibility for issues as a team. Consider counseling
       if patterns don’t change.
+
+  utter_relationship_issues/p0051:
+  - text: >
+        Dry replies can feel like a closed door. Short words slowly erase warmth from everyday moments.
+        Your heaviness comes from wanting connection that feels alive. It’s valid to feel unwanted when the conversation goes cold.
+
+  utter_relationship_issues/p0052:
+  - text: >
+        Busy seasons can steal time that love needs. Cancellations and rushing turn closeness into schedules.
+        Your sadness shows how much you value shared moments. Missing each other while staying loyal is still a heavy load to carry.
+
+  utter_relationship_issues/p0053:
+  - text: >
+        Being kept a secret carves doubt into the heart. Hidden love feels like love that isn’t proud.
+        Your pain comes from wanting to be acknowledged. You deserve presence that doesn’t hide.
+
+  utter_relationship_issues/p0054:
+  - text: >
+        When love languages don’t match, effort gets lost in translation. Care is given, but it doesn’t land where it’s needed.
+        Your hurt reflects a gap in how affection is expressed. Your need to feel loved in your way is real and valid.
+
+  utter_relationship_issues/p0055:
+  - text: >
+        Online life can spill into real love with sharp edges. Interactions on screens can trigger fears that linger.
+        Your discomfort is a response to blurred boundaries. It makes sense that social media adds weight to your heart.
+
+  utter_relationship_issues/p0056:
+  - text: >
+        Being compared to the past can bruise the present. Old memories can cast a shadow over what’s here now.
+        Your insecurity comes from wanting to be chosen fully. You deserve a love that looks forward.
+
+  utter_relationship_issues/p0057:
+  - text: >
+        Boundaries protect the space where trust grows. When privacy is crossed, safety shrinks.
+        Your unease shows a need for respect, not distance. Your space matters inside a relationship too.
+
+  utter_relationship_issues/p0058:
+  - text: >
+        Feeling useful instead of loved empties the heart over time. Effort without care becomes quiet exhaustion.
+        Your tiredness shows how much you’ve been giving. You deserve affection that doesn’t depend on favors.
+
+  utter_relationship_issues/p0059:
+  - text: >
+        Forgotten moments can feel like forgotten love. Special days matter because they hold meaning.
+        Your sadness is a sign of how much you treasure shared memories. Wanting to be remembered is a gentle and human need.
+
+  utter_relationship_issues/p0060:
+  - text: >
+        Inconsistency shakes trust like a moving floor. Warmth that turns cold leaves your body bracing.
+        Your exhaustion is the echo of constant adjustment. Stability is a quiet kind of love you deserve.
+
+  utter_relationship_issues/p0061:
+  - text: >
+        Distance stretches patience and amplifies longing. Missed calls and postponed plans pile up silently.
+        Your loneliness doesn’t mean you’re weak—it means you care deeply. Holding on across miles is a heavy kind of love.
+
+  utter_relationship_issues/p0062:
+  - text: >
+        When friends step inside the relationship, peace steps out. Outside voices can turn small sparks into fires.
+        Your hurt shows a need for healthy boundaries. Your bond deserves space to breathe without a crowd.
+
+  utter_relationship_issues/p0063:
+  - text: >
+        Diverging futures pull hearts in opposite directions. Love and plans can both be true and still clash.
+        Your heaviness comes from honoring both. It’s valid to grieve a path that no longer matches.
+
+  utter_relationship_issues/p0064:
+  - text: >
+        Jokes that sting are not harmless. Teasing that targets your soft spots reshapes your confidence.
+        Your pain is a sign of self-respect, not oversensitivity. You deserve humor that feels safe.
+
+  utter_relationship_issues/p0065:
+  - text: >
+        Night fights take tomorrow’s strength. Exhaustion turns small issues into heavy ones.
+        Your worn-out heart is asking for gentleness. Rest is part of keeping love steady.
+
+  utter_relationship_issues/p0066:
+  - text: >
+        Constant availability can feel like a leash. Personal time is not neglect—it’s survival.
+        Your guilt is the mark of someone who cares too much. Your space matters as much as your replies.
+
+  utter_relationship_issues/p0067:
+  - text: >
+        Judgment from family can dim your light. Comparisons and comments settle like dust on your confidence.
+        Your discomfort doesn’t mean you’re unworthy. You deserve to feel welcomed, not measured.
+
+  utter_relationship_issues/p0068:
+  - text: >
+        Promises without change turn hope into fatigue. Apologies lose meaning when patterns repeat.
+        Your tired heart is noticing reality clearly. It’s valid to feel done with empty words.
+
+  utter_relationship_issues/p0069:
+  - text: >
+        Disappearing and returning keeps your heart on edge. The cycle of absence and sweetness confuses safety.
+        Your anxiety is a response to instability, not a flaw. You deserve presence that stays.
+
+  utter_relationship_issues/p0070:
+  - text: >
+        Pressure to display love publicly can feel like a test. Affection becomes performance instead of connection.
+        Your discomfort is a sign you value authenticity. Love is real even when it stays private.
+
+  utter_relationship_issues/p0071:
+  - text: >
+        Shrinking yourself to keep the peace slowly dulls your light. Hiding parts of who you are turns love into performance.
+        Your discomfort is proof that your authenticity matters. You deserve a space where your full self can breathe.
+
+  utter_relationship_issues/p0072:
+  - text: >
+        When the past keeps returning, healing stalls in place. Old mistakes become fresh wounds each time they’re used.
+        Your guilt has already paid its share. You’re allowed to grow without being dragged backward.
+
+  utter_relationship_issues/p0073:
+  - text: >
+        Being placed after hobbies chips away at your sense of worth. Screens and side interests shouldn’t replace presence.
+        Your sadness is a mirror of how much you value time together. You deserve to feel chosen, not scheduled out.
+
+  utter_relationship_issues/p0074:
+  - text: >
+        Mismatched boundaries around friends create quiet storms. Comfort and respect can share space without erasing connection.
+        Your unease signals a need for clearer lines. Your feelings about safety in love are valid.
+
+  utter_relationship_issues/p0075:
+  - text: >
+        Silence after conflict freezes the heart. The space meant for cooling off becomes a wall.
+        Your hurt shows how much you long for repair, not distance. Love grows in conversation, not isolation.
+
+  utter_relationship_issues/p0076:
+  - text: >
+        Feeling like a replacement erodes confidence. Affection that echoes the past never feels fully yours.
+        Your ache comes from wanting to be chosen for who you are. You deserve a love that looks forward, not backward.
+
+  utter_relationship_issues/p0077:
+  - text: >
+        Clashing values tug at the roots of a relationship. Principles shape daily choices and long-term peace.
+        Your tension reflects depth, not stubbornness. It’s natural to feel heavy when beliefs collide.
+
+  utter_relationship_issues/p0078:
+  - text: >
+        Money pressure can turn romance into a scoreboard. Affection measured by price leaves love feeling thin.
+        Your discomfort points to a need for simplicity and respect. Your worth isn’t tied to receipts.
+
+  utter_relationship_issues/p0079:
+  - text: >
+        Diminished feelings leave marks you can’t see. Being told you’re “too much” teaches your heart to go quiet.
+        Your emotions are signals, not problems. You deserve a response that honors your experience.
+
+  utter_relationship_issues/p0080:
+  - text: >
+        Personal space keeps love breathable. When rest is treated as rejection, connection suffocates.
+        Your need for quiet is a sign of care for yourself. Love can include pause without losing warmth.
+
+  utter_relationship_issues/p0081:
+  - text: >
+        Threats turn love into a tightrope. The fear of being dropped controls every step.
+        Your shaking heart shows how unsafe the pattern feels. Care should steady you, not dangle you.
+
+  utter_relationship_issues/p0082:
+  - text: >
+        “Harmless” flirting stops feeling harmless when it cuts your peace. Public play that stings isn’t playful.
+        Your embarrassment is a real wound, not oversensitivity. Respect is the baseline for safety in love.
+
+  utter_relationship_issues/p0083:
+  - text: >
+        Carrying all the emotional weight leaves your spirit thin. Planning, soothing, and fixing alone empties the tank.
+        Your exhaustion proves how much you’ve held together. Love should be a shared lift, not a solo load.
+
+  utter_relationship_issues/p0084:
+  - text: >
+        Suspicion aimed at your friendships narrows your world. Guilt where joy should be turns connection into hiding.
+        Your need for trust and freedom is valid. You’re allowed to keep friends without fear.
+
+  utter_relationship_issues/p0085:
+  - text: >
+        Different destinations pull hearts in different directions. Home and future aren’t just places—they’re comforts.
+        Your heaviness shows how real your dreams are. It’s natural to grieve when paths don’t align.
+
+  utter_relationship_issues/p0086:
+  - text: >
+        Jokes that target your passions cut deeper than silence. Mocked joys shrink the space where you feel alive.
+        Your hurt is a defense of what matters to you. You deserve support where your spark lives.
+
+  utter_relationship_issues/p0087:
+  - text: >
+        Posting wounds online invites a crowd into your private room. Indirect shots bruise both trust and dignity.
+        Your sense of exposure is real. Love should protect your story, not publicize it.
+
+  utter_relationship_issues/p0088:
+  - text: >
+        Love that appears only at deadline time feels transactional. Being valued for help instead of heart drains quietly.
+        Your tiredness speaks of uneven care. You deserve appreciation beyond tasks.
+
+  utter_relationship_issues/p0089:
+  - text: >
+        Measuring your bond against others blurs what’s true. Comparisons turn unique love into a contest.
+        Your sadness honors the effort you’ve given. Your relationship deserves its own standard.
+
+  utter_relationship_issues/p0090:
+  - text: >
+        Stopwatch love breeds tension instead of closeness. Reply speed shouldn’t define care.
+        Your stress reflects constant evaluation. Presence matters more than seconds on a clock.
+
+  utter_relationship_issues/p0091:
+  - text: >
+        Wins that land in silence feel smaller than they are. Celebration is how love says “I see you.”
+        Your loneliness around your milestones is understandable. Your joy deserves to be met, not minimized.
+
+  utter_relationship_issues/p0092:
+  - text: >
+        Borrowed trust that never returns leaves a debt in the heart. Money mixed with avoidance becomes disrespect.
+        Your discomfort is a boundary noticing it was crossed. Your generosity shouldn’t be exploited.
+
+  utter_relationship_issues/p0093:
+  - text: >
+        Clothing critiques chip away at self-expression. Style is a language, and yours deserves respect.
+        Your sense of being policed is a sign of control, not care. You’re allowed to dress as yourself.
+
+  utter_relationship_issues/p0094:
+  - text: >
+        Twisted stories make you doubt your own steps. Gaslighting turns memory into fog.
+        Your confusion is a normal response to manipulation. Your reality matters even when it’s denied.
+
+  utter_relationship_issues/p0095:
+  - text: >
+        Secrets shared in trust are not tools for battle. Weaponized vulnerability breaks the ground beneath you.
+        Your sense of betrayal is valid. Safety means your story stays safe with them.
+
+  utter_relationship_issues/p0096:
+  - text: >
+        Avoiding your family sends a message you can’t ignore. Presence with your roots is a thread of respect.
+        Your sadness honors those connections. You deserve a partner who meets your world, not just you.
+
+  utter_relationship_issues/p0097:
+  - text: >
+        Mismatched communication styles create echoes instead of answers. Length meets brevity, and meaning gets lost.
+        Your frustration shows how much you want clarity. You deserve a rhythm that feels mutual.
+
+  utter_relationship_issues/p0098:
+  - text: >
+        Guilt laid over boundaries turns care into control. “No” is a healthy shape of love, not a threat.
+        Your need for limits protects your peace. You’re not wrong for keeping yourself whole.
+
+  utter_relationship_issues/p0099:
+  - text: >
+        Outsiders in your arguments pull the curtain off your privacy. Public opinions crowd the space where repair should happen.
+        Your discomfort respects the intimacy of your bond. Problems heal better without an audience.
+
+  utter_relationship_issues/p0100:
+  - text: >
+        Exhaustion is your heart’s way of telling the truth. Cycles that repeat without relief wear down even strong love.
+        Your sense of losing yourself is a serious signal. You deserve a connection that restores more than it drains.
+
+
+
+
+
   utter_low_self_esteem/p0001:
   - text: Feeling like you’re never good enough can be exhausting and affect many
       areas of your life. Remember, everyone has unique strengths and weaknesses,
@@ -1455,6 +2635,260 @@ responses:
   - text: You have every right to take up space and share your thoughts. Start by
       practicing small acts of self-expression each day. Confidence builds with every
       step you take.
+
+  utter_low_self_esteem/p0047:
+  - text: >
+        Seeing yourself in photos can feel harsher than a mirror. The mind quickly spots flaws and forgets the whole person. Your discomfort comes from a habit of judging, not from a lack of worth. You are more than an image frozen by a camera.
+
+  utter_low_self_esteem/p0048:
+  - text: >
+        Standing beside confident people can shrink your voice inside. It’s easy to feel overshadowed when others shine loudly. Your quiet presence still has its own strength. You don’t need to compete to have value.
+
+  utter_low_self_esteem/p0049:
+  - text: >
+        Feeling talentless often grows from constant comparisons. Value can hide in small, uncelebrated things. Your worth isn’t measured by medals or spotlights. Existing with honesty already carries its own meaning.
+
+  utter_low_self_esteem/p0050:
+  - text: >
+        Praise can feel uncomfortable when self-doubt is loud. Compliments bounce off when your inner voice says otherwise. Your unease doesn’t erase the good others see. Their words can still be true even when they feel unfamiliar.
+
+  utter_low_self_esteem/p0051:
+  - text: >
+        Saying sorry for everything is a sign of a tender heart carrying too much blame. Guilt tries to keep the peace by turning inward. Your care is real even without constant apology. You are not a problem to fix.
+
+  utter_low_self_esteem/p0052:
+  - text: >
+        Feeling tolerated instead of wanted quietly exhausts the spirit. The thought of being replaceable grows where doubt is loud. Your presence has its own weight and warmth. You matter even when your mind says otherwise.
+
+  utter_low_self_esteem/p0053:
+  - text: >
+        Mistakes feel bigger when they echo in your head all day. Self-criticism turns moments into identities. One error doesn’t define the person who’s trying. Your effort remains real even after a slip.
+
+  utter_low_self_esteem/p0054:
+  - text: >
+        Silence in class can be a shield against possible shame. Holding back ideas doesn’t mean you lack them. Your fear is a sign of care, not of emptiness. Your thoughts still carry value even when unsaid.
+
+  utter_low_self_esteem/p0055:
+  - text: >
+        Feeling unworthy of love grows from old hurts that never got comfort. Doubt warns you not to hope too much. Your longing for care shows a soft, living heart. You deserve gentleness as much as anyone.
+
+  utter_low_self_esteem/p0056:
+  - text: >
+        Mirrors and uniforms can turn into measuring sticks. The body you judge is also the body that carries you each day. Your worth is not a shape, number, or angle. You are not less because comparison is loud.
+
+  utter_low_self_esteem/p0057:
+  - text: >
+        Calling yourself boring slowly erases your color. Interest isn’t a performance—it’s a way you pay attention to life. Your presence doesn’t need to entertain to be meaningful. You bring something simply by being there.
+
+  utter_low_self_esteem/p0058:
+  - text: >
+        Hearing your own voice can feel like looking through a harsh lens. Recordings reveal textures we’re not used to loving. Discomfort doesn’t mean your voice lacks warmth or weight. You are still heard with kindness by others.
+
+  utter_low_self_esteem/p0059:
+  - text: >
+        Naming yourself a failure after a setback turns a moment into a label. Exhaustion and pressure blur what’s true. Your path is bigger than one result. The person who keeps going is not a failure.
+
+  utter_low_self_esteem/p0060:
+  - text: >
+        Turning down chances to protect yourself from shame is a quiet loss. Doubt pretends to keep you safe while taking away moments. Your wish to try shows there is courage underneath the fear. You don’t need permission to begin again.
+
+  utter_low_self_esteem/p0061:
+  - text: >
+        Feeling like an impostor makes earned things feel borrowed. Success looks smaller when fear says you tricked everyone. Your work did not appear from luck alone. You have a place in the rooms you’ve reached.
+
+  utter_low_self_esteem/p0062:
+  - text: >
+        A magnifying glass on flaws hides the whole picture. Harsh focus drains softness from your own reflection. You are a collection of more than imperfections. Kindness toward yourself does not require perfection first.
+
+  utter_low_self_esteem/p0063:
+  - text: >
+        Attention can feel like a spotlight that burns instead of warms. Hiding good news is a way to stay safe, not a sign of emptiness. Your joy doesn’t need to be small to be real. It’s okay if recognition feels unfamiliar.
+
+  utter_low_self_esteem/p0064:
+  - text: >
+        Believing your ideas don’t matter keeps your mouth closed and your heart heavy. Value isn’t decided by volume or speed. Your perspective carries experiences only you have lived. Quiet thoughts can still hold deep truth.
+
+  utter_low_self_esteem/p0065:
+  - text: >
+        Comparing your pace to others turns effort into shame. Tiredness gets mislabeled as laziness when pressure is constant. Your rhythm has reasons, not excuses. You’re allowed to move at a human pace.
+
+  utter_low_self_esteem/p0066:
+  - text: >
+        When the past feels like a name tag, the present shrinks. Old versions of you were real, but they are not the whole story. Growth does not erase what was—it adds to it. You are allowed to outgrow your previous chapters.
+
+  utter_low_self_esteem/p0067:
+  - text: >
+        Breakouts can feel louder than your whole face. The mirror zooms in on spots and forgets your warmth.
+        Your worth doesn’t change with your skin’s mood. You are still the same person beneath a temporary flare.
+
+  utter_low_self_esteem/p0068:
+  - text: >
+        Money and brands can make rooms feel uneven. Feeling small beside shiny things doesn’t mean you’re less.
+        Your value isn’t priced by gadgets or clothes. You carry dignity that doesn’t need labels.
+
+  utter_low_self_esteem/p0069:
+  - text: >
+        Accents and slips don’t erase intelligence. Learning out loud takes courage most people don’t see.
+        Your voice is still a voice worth hearing. Fluency grows with time, not shame.
+
+  utter_low_self_esteem/p0070:
+  - text: >
+        Uniforms can make bodies feel like they’re on display. Fabric and fit can’t measure your beauty.
+        Your discomfort is real, but it isn’t your identity. You are more than how cloth sits on your skin.
+
+  utter_low_self_esteem/p0071:
+  - text: >
+        Not cracking jokes doesn’t make you empty. Presence isn’t a performance to keep others entertained.
+        Your quiet tone still brings ease and steadiness. You don’t have to be “funny” to be worthy company.
+
+  utter_low_self_esteem/p0072:
+  - text: >
+        Reading at your own pace isn’t a flaw. Comprehension is more than speed on a page.
+        Your patience with yourself still counts as effort. You’re learning, even when it takes longer.
+
+  utter_low_self_esteem/p0073:
+  - text: >
+        One stumble can feel like a verdict when doubt is loud. A single result can’t define a whole person.
+        Your future didn’t end with that moment. You remain larger than your worst day.
+
+  utter_low_self_esteem/p0074:
+  - text: >
+        Height jokes can chip away at confidence. Feeling overlooked doesn’t mean you’re lesser.
+        Your presence isn’t measured in inches. You take up space that matters, exactly as you are.
+
+  utter_low_self_esteem/p0075:
+  - text: >
+        Body changes can unsettle how you see yourself. Clothes fit differently and the mind turns harsh.
+        Your worth isn’t tied to a number or a size. Kindness to your changing body is still allowed.
+
+  utter_low_self_esteem/p0076:
+  - text: >
+        Messy pages don’t make a messy mind. Notes are tools, not proofs of value.
+        Your penmanship doesn’t cancel your ideas. You are more than the lines your hand can draw.
+
+  utter_low_self_esteem/p0077:
+  - text: >
+        Style is learned, not assigned at birth. Feeling basic today doesn’t lock your tomorrow.
+        Your gentleness with yourself can open room to explore. You’re allowed to grow into what feels like you.
+
+  utter_low_self_esteem/p0078:
+  - text: >
+        Corrections can sting like labels when the heart is tender. Being called out doesn’t cancel your ability.
+        Your worth remains after mistakes. You can hold dignity and error in the same hand.
+
+  utter_low_self_esteem/p0079:
+  - text: >
+        Not shining in sports doesn’t erase your strengths. Bodies move differently and that’s human.
+        Your value isn’t scored by speed or power. You still belong on days your feet feel heavy.
+ 
+  utter_low_self_esteem/p0080:
+  - text: >
+        Where you’re from is not a downgrade. Roots are stories, not rankings.
+        Your background brings depth that cities can’t teach. You deserve respect without having to edit yourself.
+
+  utter_low_self_esteem/p0081:
+  - text: >
+        Quick answers aren’t the only kind of smart. Thoughtfulness takes time and that time has value.
+        Your slower pace can still be clear and true. Insight doesn’t need to rush to be real.
+
+  utter_low_self_esteem/p0082:
+  - text: >
+        A smile you hide is still a smile that belongs to you. Teeth and symmetry don’t define warmth.
+        Your laughter carries connection even behind a hand. You’re allowed to be seen with joy.
+
+  utter_low_self_esteem/p0083:
+  - text: >
+        Feeling replaceable grows in spaces where you feel unseen. That fear speaks to your deep wish to matter.
+        Your place isn’t as fragile as doubt says. You carry unique care that can’t be copied.
+
+  utter_low_self_esteem/p0084:
+  - text: >
+        Asking for help is not a confession of weakness. Curiosity is a form of courage.
+        Your questions show commitment, not failure. You remain capable while learning out loud.
+
+  utter_low_self_esteem/p0085:
+  - text: >
+        Filters can rewrite how you see yourself. Candid moments feel harsher because they’re honest.
+        Your unedited face is still a human face, worthy and warm. You don’t have to disappear from the picture.
+
+  utter_low_self_esteem/p0086:
+  - text: >
+        Birthdays can highlight the fear of being unseen. Fewer greetings don’t shrink your importance.
+        Your worth isn’t measured by notifications. You still matter on quiet days and loud ones alike.
+
+  utter_low_self_esteem/p0087:
+  - text: >
+        Family expectations can feel like mountains on your shoulders. Trying to meet every hope drains more than it builds.
+        Your worth isn’t tied to perfect outcomes. You are still enough, even while learning.
+
+  utter_low_self_esteem/p0088:
+  - text: >
+        Being remembered only when convenient makes you question your place. That ache doesn’t mean you’re unimportant.
+        You bring quiet steadiness others may not always see—but it still matters.
+
+  utter_low_self_esteem/p0089:
+  - text: >
+        Overthinking every word can make your voice disappear. Embarrassment lingers longer in your mind than in theirs.
+        You’re allowed to speak and still stumble. Your words have meaning beyond perfection.
+
+  utter_low_self_esteem/p0090:
+  - text: >
+        Grades can’t measure the depth of what you carry. Comparing yourself to others steals focus from your progress.
+        You’re still growing even when results don’t show it yet. Intelligence comes in different rhythms.
+
+  utter_low_self_esteem/p0091:
+  - text: >
+        Feeling invisible despite effort hurts deeply. You wish to see proof that what you do matters.
+        But impact often starts quietly. You change small corners without realizing it.
+
+  utter_low_self_esteem/p0092:
+  - text: >
+        Speaking in different tones or accents doesn’t make your words lesser. Communication is about connection, not perfection.
+        Your voice is valid just as it is. You don’t have to sound like anyone else to be understood.
+
+  utter_low_self_esteem/p0093:
+  - text: >
+        Doubting your ideas turns bright thoughts into whispers. Fear convinces you that silence is safer.
+        Yet your voice adds color to conversations others can’t paint. You belong in the discussion.
+
+  utter_low_self_esteem/p0094:
+  - text: >
+        Skin tone is not a scale of worth. The world’s unfair beauty rules don’t define your light.
+        Your shade carries history, warmth, and identity. You deserve pride, not apology.
+
+  utter_low_self_esteem/p0095:
+  - text: >
+        Productivity culture tricks you into equating rest with failure. Worth doesn’t pause when work does.
+        You are more than your output. Rest is also part of living, not proof of weakness.
+
+  utter_low_self_esteem/p0096:
+  - text: >
+        Singing takes vulnerability that fear tries to silence. Your voice doesn’t need perfection to be genuine.
+        Every sound that carries emotion already holds beauty. You deserve to be heard, not compared.
+
+  utter_low_self_esteem/p0097:
+  - text: >
+        Feeling tolerated rather than wanted creates quiet pain. Your mind fills gaps with self-blame.
+        But your existence isn’t an inconvenience. You bring presence even when no one names it.
+
+  utter_low_self_esteem/p0098:
+  - text: >
+        Mirrors can turn into critics when you’re already tired of yourself. But they reflect more than flaws.
+        Behind the surface is someone learning patience. You are not what your reflection says on bad days.
+
+  utter_low_self_esteem/p0099:
+  - text: >
+        Pretending to be fine is heavy work. The act of holding a smile becomes its own exhaustion.
+        Your mask was a form of survival, not deceit. You’re allowed to rest from pretending.
+
+  utter_low_self_esteem/p0100:
+  - text: >
+        The wish to stop hating yourself is already healing beginning. Tiredness means your heart wants peace.
+        You’ve carried judgment for too long—softness is overdue. You are allowed to breathe in acceptance.
+
+
+
+
   utter_loneliness/p0001:
   - text: Feeling lonely even in a crowd is more common than you might think. Sometimes,
       it’s not about the number of people around us, but the depth of our connections.
@@ -1668,6 +3102,270 @@ responses:
   - text: Feeling understood is a deep need. Try sharing your experiences with someone
       you trust, or seek out groups where people discuss similar feelings. You’re
       not alone in what you’re experiencing.
+
+  utter_loneliness/p0050:
+  - text: >
+        Feeling unseen in a crowded room can be its own kind of quiet. Noise moves around you while connection feels out of reach.
+        Your loneliness isn’t because you lack worth—it’s because your heart is longing for real presence. That longing is valid.
+
+  utter_loneliness/p0051:
+  - text: >
+        Carrying problems alone turns thoughts into heavy echoes. Keeping everything inside doesn’t mean you’re strong or cold.
+        It means you’ve been protecting yourself for a long time. Your feelings still deserve gentle space.
+
+  utter_loneliness/p0052:
+  - text: >
+        Being left out by people you care about stings deeply. Photos and stories can feel like closed doors.
+        Your hurt shows how much relationships matter to you. It’s natural to feel small when you’re not included.
+
+  utter_loneliness/p0053:
+  - text: >
+        Distance from home makes ordinary moments feel colder. Dorm nights and quiet meals underline the silence.
+        Your loneliness honors how much your roots mean to you. Missing home is a sign of love, not weakness.
+
+  utter_loneliness/p0054:
+  - text: >
+        Feeling alone inside a relationship is a quiet heartbreak. Physical closeness can’t replace emotional warmth.
+        Your emptiness speaks to needs that have gone unnoticed. Your heart is asking to be met, not just accompanied.
+
+  utter_loneliness/p0055:
+  - text: >
+        Being contacted only for help makes love feel transactional. Kindness without reciprocity leaves a hollow space.
+        Your loneliness after giving is a sign of imbalance, not oversensitivity. You deserve care even when you’re not needed.
+
+  utter_loneliness/p0056:
+  - text: >
+        Empty weekends can stretch time into long shadows. Without plans, the hours echo with your own thoughts.
+        Your sadness on rest days doesn’t make you ungrateful. It simply shows how much you miss connection.
+
+  utter_loneliness/p0057:
+  - text: >
+        Shyness can build invisible walls around warm intentions. Standing at the edge of conversations doesn’t mean you don’t care.
+        Your quiet nature still carries value. You belong even when your voice is soft.
+
+  utter_loneliness/p0058:
+  - text: >
+        Drifting from old friends leaves a familiar silence. Memories light up what used to feel safe.
+        Your loneliness is a way of honoring what mattered. Change hurts even when it’s no one’s fault.
+
+  utter_loneliness/p0059:
+  - text: >
+        Night magnifies feelings the day can distract. When the world goes still, the ache grows louder.
+        Your heaviness at bedtime doesn’t mean you’re weak. It means you’ve been holding more than you could say.
+
+  utter_loneliness/p0060:
+  - text: >
+        Smiles can be armor when you don’t feel seen. Performing okay-ness keeps you safe but also alone.
+        Your wish to be known is a sign of courage. You are more than the mask that gets you through the day.
+
+  utter_loneliness/p0061:
+  - text: >
+        After classes, the halls empty and so does the day’s noise. The quiet walk home highlights the gaps.
+        Your loneliness then is a mirror of how much connection fuels you. It’s okay to feel that drop in your chest.
+
+  utter_loneliness/p0062:
+  - text: >
+        Days without check-ins can make worth feel invisible. Silence from others grows heavier with time.
+        Your longing to be remembered is deeply human. You deserve to be thought of without having to ask.
+
+  utter_loneliness/p0063:
+  - text: >
+        Online spaces can feel crowded yet cold. Activity isn’t the same as closeness.
+        Your emptiness while scrolling doesn’t mean you’re doing life wrong. It means your heart prefers presence over noise.
+
+  utter_loneliness/p0064:
+  - text: >
+        Conflict followed by silence leaves an empty room in the chest. Missing someone you’re upset with is a layered pain.
+        Your loneliness honors both the bond and the rupture. It’s normal to feel pulled in two directions.
+
+  utter_loneliness/p0065:
+  - text: >
+        Cancelled plans can feel like being cancelled yourself. The momentum of hope turns into stillness.
+        Your sadness shows how much you were ready for connection. That disappointment is real and allowed.
+
+  utter_loneliness/p0066:
+  - text: >
+        Being the quiet one shouldn’t mean being unseen. Introversion can be mistaken for disinterest.
+        Your presence still carries warmth even when words are few. You matter without having to be loud.
+
+  utter_loneliness/p0067:
+  - text: >
+        New schools and unfamiliar hallways can stretch loneliness wide. Not knowing anyone makes each step feel slower.
+        Your isolation reflects courage—you still show up. You’re learning a new place while missing the old one.
+
+  utter_loneliness/p0068:
+  - text: >
+        Illness can make the room feel farther from people. Taking care of yourself while unwell magnifies the quiet.
+        Your wish to be checked on speaks of your gentle heart. You deserve comfort when your body is tired.
+
+  utter_loneliness/p0069:
+  - text: >
+        Always being the one to reach out wears down hope. Effort without return turns connection into work.
+        Your exhaustion is a sign that your care is real. You deserve energy that comes back to you.
+
+  utter_loneliness/p0070:
+  - text: >
+        Eating alone turns a simple meal into a silent mirror. You watch the room move while your table stays still.
+        The ache you feel is your heart asking to belong. That longing doesn’t make you weak—it makes you human.
+
+  utter_loneliness/p0071:
+  - text: >
+        Long rides stretch quiet thoughts into wider spaces. The scenery passes but the emptiness stays.
+        Your heaviness in transit is a real feeling, not drama. You’re carrying more than a backpack on those trips.
+
+  utter_loneliness/p0072:
+  - text: >
+        Being present yet uninvited into decisions carves out a hollow spot. Group work without inclusion becomes another kind of silence.
+        Your sense of being a filler is pain, not pettiness. You deserve to be part of the circle, not just around it.
+
+  utter_loneliness/p0073:
+  - text: >
+        Events can glow bright around a lonely heart. Music and lights can’t replace a place to lean.
+        Your emptiness there simply shows how much connection matters to you. It’s okay that crowds don’t cure it.
+
+  utter_loneliness/p0074:
+    - text: >
+        A quiet birthday can make time feel heavier than candles. The day circles back to you and the room stays still.
+        Your feeling of being unimportant is a wound, not a fact. Your day still holds meaning because you’re in it.
+
+  utter_loneliness/p0075:
+  - text: >
+        Shared spaces don’t always share warmth. Desks and whispers surround you but don’t reach your chest.
+        Your silence between shelves is noticed here. You’re not wrong for wanting more than proximity.
+
+  utter_loneliness/p0076:
+  - text: >
+        Side-lines teach the body a lonely posture. Getting picked last presses on places you can’t name.
+        Your hurt in practice is real, even if no one claps for it. You still belong on the floor you stand on.
+
+  utter_loneliness/p0077:
+  - text: >
+        Messages unanswered become little echoes. Seen marks without replies make minutes heavier.
+        Your worth isn’t measured by bubbles on a screen. Your voice matters even in silence.
+
+  utter_loneliness/p0078:
+  - text: >
+        Holidays can spotlight an empty chair. Traditions feel thinner without familiar hands around.
+        Your loneliness then is a tribute to what you wish you had. Missing connection means it matters to you.
+
+  utter_loneliness/p0079:
+  - text: >
+        Sharing a room without sharing a life sharpens the quiet. Breathing the same air isn’t the same as being known.
+        Your awkwardness is a sign of wanting safety. You’re not asking for too much by wishing for warmth.
+
+  utter_loneliness/p0080:
+  - text: >
+        An empty house answers with echoes. The door closes and the quiet grows.
+        Your chest feeling tight in that silence is understandable. You deserve softness to meet you at the threshold.
+
+  utter_loneliness/p0081:
+  - text: >
+        Circles can look closed from the outside. Finding no spot to stand hurts more than walking alone.
+        Your longing to fit is a sign of hope, not failure. You are not extra—you’re someone seeking a place.
+
+  utter_loneliness/p0082:
+  - text: >
+        Cleaning timelines can clean connections too. Peace arrives and takes some company with it.
+        Your quiet feed is a cost you’re allowed to name. Missing noise doesn’t make your boundary wrong.
+
+  utter_loneliness/p0083:
+  - text: >
+        Illness makes the screen feel colder. A muted square can’t hold your hand.
+        Your isolation while learning from bed is real. Your effort to show up still counts.
+
+  utter_loneliness/p0084:
+  - text: >
+        New halls don’t know your name yet. Until they do, every bell rings a little lonelier.
+        Your invisibility there isn’t a verdict—it’s a beginning. You’re allowed to be new and still worthy.
+
+  utter_loneliness/p0085:
+  - text: >
+        Budget limits can fence off belonging. Saying “next time” to invites leaves footprints indoors.
+        Your loneliness here isn’t about value—it’s about access. Your worth is not a price tag.
+
+  utter_loneliness/p0086:
+  - text: >
+        Different interests can turn talk into glass. Smiles keep it polite while your heart stands outside.
+        Your sense of drifting is valid. You’re allowed to prefer depth over fitting in.
+
+  utter_loneliness/p0087:
+  - text: >
+        Walkways can feel like runways to nowhere. Footsteps count time when company doesn’t.
+        Your smallness against a big campus is a true feeling. You’re still real in all that space.
+
+  utter_loneliness/p0088:
+  - text: >
+        Finding out after the fact leaves a special ache. Pictures become proof that you weren’t there.
+        Your hurt marks the value you place on being included. That value is worth honoring.
+
+  utter_loneliness/p0089:
+  - text: >
+        Third-wheeling turns presence into background. Conversation curves around you like you’re furniture.
+        Your quiet there isn’t emptiness—it’s displacement. You deserve spaces where you’re centered.
+
+  utter_loneliness/p0090:
+  - text: >
+        Being treated as “just for school” shrinks the heart. Tasks end and so does attention.
+        Your loneliness names the difference between function and friendship. You’re allowed to want more than utility.
+
+  utter_loneliness/p0091:
+  - text: >
+        Families evolve and leave rooms behind. Busy siblings don’t erase old closeness, but the gap still stings.
+        Your ache honors what you had. Missing it means it mattered.
+
+  utter_loneliness/p0092:
+  - text: >
+        Thoughts kept inside pile up like unread drafts. Watching class from the edge strains the spirit.
+        Your silence is a strategy, not a sentence. You still belong at the table of ideas.
+
+  utter_loneliness/p0093:
+  - text: >
+        Rain can underline the outline of a day. The sky speaks in gray and your chest answers.
+        Your heaviness in that weather is not overreacting. You’re responding to a world that looks like how you feel.
+
+  utter_loneliness/p0094:
+  - text: >
+        Returning to quiet after constant company confuses the heart. The sudden space echoes where voices used to be.
+        Your disconnection is part of adjusting, not a flaw. You are allowed to miss the noise.
+
+  utter_loneliness/p0095:
+  - text: >
+        When projects end, so does the illusion of closeness. Silence after collaboration can surprise the lonely parts of you.
+        Your emptiness is a truth you’re noticing. It’s okay to grieve a chat that only lived for a grade.
+
+  utter_loneliness/p0096:
+  - text: >
+        Going offline gives peace and takes chatter. The trade leaves a hush that can feel heavy.
+        Your conflict between calm and company is understandable. You’re allowed to name both needs.
+
+  utter_loneliness/p0097:
+  - text: >
+        Wins without witnesses shrink themselves. Joy looks for a face and finds none.
+        Your celebration deserves to echo somewhere. The quiet doesn’t cancel your achievement.
+
+  utter_loneliness/p0098:
+  - text: >
+        Belonging needs a bench with your name on it. Wandering between places wears the feet and the heart.
+        Your wish for a spot that feels like home is valid. You’re not lost for wanting it.
+
+  utter_loneliness/p0099:
+  - text: >
+        Conversations that fade aren’t proof you’re empty. Topics die; your worth doesn’t.
+        Your fear in the quiet is understandable. You are more than the words you can find today.
+
+  utter_loneliness/p0100:
+  - text: >
+        Exhaustion is loneliness speaking in a deeper voice. Being unseen for too long thins out hope.
+        Your tired heart is telling the truth about what it needs. You deserve connection that holds, not just passes by.
+
+
+
+
+
+
+
+
+
   utter_family_problems/p0001:
   - text: It’s very hard when there’s conflict at home, especially between people
       you care about. Remember, their arguments are not your fault, and you deserve
@@ -1871,6 +3569,269 @@ responses:
   - text: Anxiety from expectations is common. Set realistic goals, communicate your
       feelings when you can, and take time for self-care and relaxation. Your well-being
       matters.
+
+  utter_family_problems/p0050:
+  - text: >
+        Arguments at home can turn familiar walls into battlegrounds. You’re caught in a storm that isn’t yours to control.
+        The tension you feel is real—it’s the weight of wanting peace where chaos keeps returning.
+
+  utter_family_problems/p0051:
+  - text: >
+        Constant comparison steals the joy of being yourself. You’re not a ranking to prove; you’re a person to understand.
+        Feeling small beside siblings doesn’t make you less. You deserve to be seen for your own light.
+
+  utter_family_problems/p0052:
+  - text: >
+        Love that feels absent leaves invisible bruises. Silence where warmth should be makes the house colder.
+        Your need to feel valued is valid. You’re not unlovable just because affection isn’t shown.
+
+  utter_family_problems/p0053:
+  - text: >
+        Expectations can become invisible chains. You carry dreams that aren’t yours just to keep peace.
+        Your fear of failing them shows how much you care—but your life is still your own story to live.
+
+  utter_family_problems/p0054:
+  - text: >
+        Misunderstanding at home feels like speaking different languages. You try to explain but only echoes return.
+        Your hurt doesn’t make you disrespectful—it means you wish to be heard, not silenced.
+
+  utter_family_problems/p0055:
+  - text: >
+        Silence in a tense home isn’t peace—it’s exhaustion. Walking on eggshells every day drains more than shouting ever could.
+        You’re not weak for wanting calm. You deserve a space that feels safe, not just quiet.
+
+  utter_family_problems/p0056:
+  - text: >
+        Separation rewrites family in ways no one asked for. The missing pieces in dinners and photos ache deeply.
+        Your sadness honors the love that once filled that space. Missing it doesn’t mean you’re stuck—it means you care.
+
+  utter_family_problems/p0057:
+  - text: >
+        Anger from those you love can make home feel unsafe. Fear teaches your body to shrink even when you’ve done nothing wrong.
+        You’re not overreacting—you’re responding to chaos. Your need for safety is valid.
+
+  utter_family_problems/p0058:
+  - text: >
+        Misunderstood rest is still rest. They see laziness where burnout hides.
+        Your tiredness doesn’t mean you lack discipline—it means you’ve been carrying too much for too long.
+
+  utter_family_problems/p0059:
+  - text: >
+        Feeling like the black sheep means carrying constant guilt. You twist yourself to fit molds never made for you.
+        You’re not defective for being different. You bring color to a family that forgot variety is strength.
+
+  utter_family_problems/p0060:
+  - text: >
+        Being told to stop feeling adds pain to pain. Dismissed emotions don’t disappear—they go quiet and heavier.
+        You’re not dramatic for needing to be understood. Your heart deserves validation, not correction.
+
+  utter_family_problems/p0061:
+  - text: >
+        Money fights fill rooms with a kind of fear that lingers. You hear words not meant for you but still feel responsible.
+        Your worry shows empathy, not fault. Finances are not your burden to fix.
+
+  utter_family_problems/p0062:
+  - text: >
+        Carrying adult duties too soon steals pieces of youth. You manage what others should be sharing.
+        Your exhaustion doesn’t mean weakness—it’s the proof of care stretched too thin.
+
+  utter_family_problems/p0063:
+  - text: >
+        Gossip from relatives cuts deeper than strangers’ words. Judgment dressed as concern makes family feel unsafe.
+        Your discomfort is valid—you’re protecting your peace from noise disguised as care.
+
+  utter_family_problems/p0064:
+  - text: >
+        Dreams that don’t match theirs create quiet wars. Your heart’s direction deserves to be part of the conversation.
+        You’re not rebellious for wanting your own path—you’re brave for choosing it.
+
+  utter_family_problems/p0065:
+  - text: >
+        Being unseen around your own dinner table feels lonelier than silence. Presence without attention still hurts.
+        Your wish to be noticed is a basic need, not a demand.
+
+  utter_family_problems/p0066:
+  - text: >
+        Comparison to others chips away at identity. Every “be like them” plants doubt where confidence should grow.
+        You’re not failing—you’re just trying to be yourself in a house that forgot that’s enough.
+
+  utter_family_problems/p0067:
+  - text: >
+        Jokes that hit your insecurities leave hidden bruises. Laughter at your expense doesn’t sound like love.
+        You’re allowed to hurt from words said in jest. It’s okay to wish for gentler humor.
+
+  utter_family_problems/p0068:
+  - text: >
+        Mediating between family members turns you into the adult too soon. Keeping peace for everyone steals your rest.
+        You’re allowed to lay down that role. The world doesn’t end if you take a breath.
+
+  utter_family_problems/p0069:
+  - text: >
+        Hiding pain from family shouldn’t have to be survival. Avoiding judgment keeps you quiet but not comforted.
+        You’re not ungrateful for wanting to be heard safely. You deserve understanding, not lectures.
+
+  utter_family_problems/p0070:
+  - text: >
+        Pleasing everyone at home is a battle without rest. You bend so much the cracks start to show.
+        Your exhaustion means you’ve given too much. You’re allowed to want peace, not performance.
+
+  utter_family_problems/p0071:
+  - text: >
+        Rules that don’t bend can make home feel like a cage. Being treated like a child despite your effort to be responsible
+        drains your trust in the space that should believe in you. Your need for reasonable freedom is valid.
+
+  utter_family_problems/p0072:
+  - text: >
+        Carrying most of the housework while keeping up with school stretches the day too thin. Invisible effort still burns energy.
+        Feeling taken for granted isn’t overreacting—it’s your body naming the load you hold.
+
+  utter_family_problems/p0073:
+  - text: >
+        A home without privacy keeps the heart on alert. When phones and rooms are opened without permission,
+        safety shrinks. Your wish for personal space isn’t rebellion—it’s a basic need.
+
+  utter_family_problems/p0074:
+  - text: >
+        Comments about your body leave bruises that don’t show. Humor that targets your appearance isn’t harmless.
+        Your discomfort is a sign of self-respect. You deserve gentleness from the people meant to protect you.
+
+  utter_family_problems/p0075:
+  - text: >
+        Dreams argued with at the dinner table lose their color. Being pushed toward a path that isn’t yours
+        replaces passion with guilt. Your future deserves your own signature.
+
+  utter_family_problems/p0076:
+  - text: >
+        Homes without apologies teach children to swallow hurt. When accountability is missing,
+        healing has nowhere to land. Your ache for acknowledgment is reasonable and real.
+
+  utter_family_problems/p0077:
+  - text: >
+        Pain turned into a punchline keeps wounds open. When struggles are mocked, the room grows colder.
+        Your feelings deserve respect, not dismissal. Wanting to be taken seriously is not a flaw.
+
+  utter_family_problems/p0078:
+  - text: >
+        Crowded rooms and constant noise can grind down focus. It’s hard to build a calm mind without a quiet corner.
+        Your frustration doesn’t mean you’re ungrateful—it means you’re human in a tight space.
+
+  utter_family_problems/p0079:
+  - text: >
+        Money used as a leash turns care into control. Allowance should support, not threaten.
+        The fear you feel around finances is a real response to power being misused.
+
+  utter_family_problems/p0080:
+  - text: >
+        Secrets in a family create shadows where trust should live. Being kept out of important news
+        teaches you to doubt your place. Your longing to be included is about safety, not curiosity.
+
+  utter_family_problems/p0081:
+  - text: >
+        Distance for work can leave distance in the heart. Loving across time zones changes the rhythm of home.
+        Missing presence doesn’t mean you’re ungrateful—it honors what you wish you still had.
+
+  utter_family_problems/p0082:
+  - text: >
+        Blended families require new maps for the same house. Feeling like a guest where you live is exhausting.
+        Your unease is a sign that adjustment takes time and care. You’re not wrong for needing both.
+
+  utter_family_problems/p0083:
+  - text: >
+        Alcohol at home can turn nights uncertain. The tension and fear you carry are not overreactions.
+        Wanting safety and calm is a basic need. Your body is telling the truth when it braces.
+
+  utter_family_problems/p0084:
+  - text: >
+        Love measured by grades turns warmth into transactions. A report card can’t hold your whole story.
+        You deserve regard that doesn’t rise and fall with numbers.
+
+  utter_family_problems/p0085:
+  - text: >
+        Mocked interests make the world feel smaller. Joy shouldn’t need permission slips.
+        Your hobbies are part of your identity, not a problem to fix. You’re allowed to keep the things that brighten you.
+
+  utter_family_problems/p0086:
+  - text: >
+        Eldest roles often carry responsibility without the same tenderness. Doing more and receiving less leaves quiet fatigue.
+        Your wish to be seen—not just relied on—is valid.
+
+  utter_family_problems/p0087:
+  - text: >
+        Reunions that feel like interviews drain the spirit. Questions dressed as concern can still sting.
+        Your exhaustion after these events is real. You deserve spaces that feel like home, not a panel.
+
+  utter_family_problems/p0088:
+  - text: >
+        A parent’s new love rearranges the furniture of home. Feeling replaced or unsure is a human response.
+        Your heart is learning a new layout while remembering the old one. That tension is allowed.
+
+  utter_family_problems/p0089:
+  - text: >
+        Constant moving steals the chance to put down roots. Unpacked boxes become a way of living.
+        Your restlessness tells the story of a home that keeps shifting. Stability is a fair need.
+
+  utter_family_problems/p0090:
+  - text: >
+        Grandparent care brings love and old rules in the same room. Respect and mismatch can coexist.
+        Your guilt is the mark of someone who cares. You’re allowed to wish for understanding, not just discipline.
+
+  utter_family_problems/p0091:
+  - text: >
+        Illness in a parent makes time feel heavier. Worry sits beside you while you study and sleep.
+        Your fear doesn’t mean you’re weak—it means you love deeply. It’s okay that your focus wavers.
+
+  utter_family_problems/p0092:
+  - text: >
+        Interrupted study signals that your needs aren’t being heard. Learning requires room to breathe.
+        Your frustration is valid when quiet time is treated like a luxury.
+
+  utter_family_problems/p0093:
+  - text: >
+        Faith used as control blurs devotion with pressure. Belief should be a shelter, not a leash.
+        Your wish for freedom of conscience is a form of respect—for yourself and for faith.
+
+  utter_family_problems/p0094:
+  - text: >
+        Being told who you can befriend shrinks your world. Trust replaced by suspicion suffocates growth.
+        Your need to choose your own circle is reasonable. Healthy bonds require room to choose.
+
+  utter_family_problems/p0095:
+  - text: >
+        Being the messenger between parents turns love into labor. Secrets and side-taking weigh more than books ever could.
+        Your heaviness is proof that this role isn’t yours to carry.
+
+  utter_family_problems/p0096:
+  - text: >
+        Debt and due dates hang in the air like storm clouds. Hearing numbers and threats makes every day feel urgent.
+        Your anxiety is a normal reaction to a house under strain. The burden isn’t yours alone.
+
+  utter_family_problems/p0097:
+  - text: >
+        Favoritism in the clan writes invisible ranks on people. Being overlooked bruises quietly.
+        Your pain here is real. You deserve to be valued without comparison.
+
+  utter_family_problems/p0098:
+  - text: >
+        Wins that go unnoticed shrink inside your chest. You shouldn’t have to clap for yourself in secret.
+        Your desire to be celebrated is not vanity—it’s a human need to be seen.
+
+  utter_family_problems/p0099:
+  - text: >
+        Financial expectations placed on your shoulders turn love into invoices. Studying while feeling indebted is heavy.
+        Your guilt doesn’t mean you owe your worth in cash. You are more than what you can provide.
+
+  utter_family_problems/p0100:
+  - text: >
+        Constant tension erodes the feeling of home. Exhaustion is your body naming what your mouth is tired of saying.
+        Wanting peace isn’t selfish—it’s survival. You are allowed to look for calm.
+
+
+
+
+
+
+
+
   utter_burnout/p0001:
   - text: Constant tiredness can be a sign of burnout, especially if you’re juggling
       a lot of responsibilities. It’s important to listen to your body and mind—take
@@ -2047,6 +4008,280 @@ responses:
   utter_burnout/p0046:
   - text: Asking for help is a strength, not a burden. Friends, family, and counselors
       want to support you. You deserve care and support just like anyone else.
+
+  utter_burnout/p0047:
+  - text: >
+        Waking up tired is a sign your body has been carrying more than sleep can fix. The day hasn’t started but the weight is already there.
+        Your exhaustion isn’t laziness—it’s the cost of running on empty for too long. What you feel is real and heavy.
+
+  utter_burnout/p0048:
+  - text: >
+        Numbness toward school grows when effort stops connecting to meaning. The heart pulls back to protect itself from constant demand.
+        Your detachment is a signal, not a defect. It shows how long you’ve been pushing without relief.
+
+  utter_burnout/p0049:
+  - text: >
+        Moving on autopilot keeps you functioning while the mind goes quiet. Routine replaces intention when energy is low.
+        Your blankness is a response to overload. You’ve been surviving more than you’ve been living.
+
+  utter_burnout/p0050:
+  - text: >
+        Cynicism often hides a tired, disappointed heart. When hope thins out, everything starts to look pointless.
+        Your irritation is a shield that formed from long pressure. It makes sense that enthusiasm feels far away.
+
+  utter_burnout/p0051:
+  - text: >
+        Brain fog is burnout’s smoke signal. Focus slips because the mind is overworked, not because you don’t care.
+        Your slow thoughts are a sign of fatigue, not lack of ability. You’ve been holding too much for too long.
+
+  utter_burnout/p0052:
+  - text: >
+        A tired mind can still leave a tired body. Hours of sitting can weigh like miles when stress is constant.
+        Your aches are valid—they’re the body’s way of saying the pace has been harsh.
+
+  utter_burnout/p0053:
+  - text: >
+        Irritability grows when your energy is already at zero. Small sparks feel like big fires because the tank is empty.
+        Your reactions are signs of depletion, not bad character. You’re simply worn thin.
+
+  utter_burnout/p0054:
+  - text: >
+        Caffeine can feel like borrowed time. It props you up while your system asks for real rest.
+        Your reliance is understandable in nonstop seasons. It shows how much you’ve been demanded to keep going.
+
+  utter_burnout/p0055:
+  - text: >
+        Emptiness after finishing tasks reveals how little fuel is left. Achievement can’t land when you’re already depleted.
+        Your flatness is not ingratitude—it’s exhaustion speaking. You’ve given more than you could feel.
+
+  utter_burnout/p0056:
+  - text: >
+        Living near all-nighters turns night into a battlefield. The body forgets what calm sleep feels like.
+        Your late hours aren’t a badge—they’re a symptom. You’ve been pushing past your limits for too long.
+
+  utter_burnout/p0057:
+  - text: >
+        Carrying both academics and org duties stretches care beyond capacity. Leadership with low energy becomes survival.
+        Your overwhelm is proof of responsibility, not failure. You’ve been splitting one self into too many roles.
+
+  utter_burnout/p0058:
+  - text: >
+        The dread that arrives before Monday is a quiet alarm. Week after week, your system braces for more.
+        Your heaviness on Sundays shows how continuous the pressure has been. It’s a real feeling with real causes.
+
+  utter_burnout/p0059:
+  - text: >
+        Ignoring messages isn’t apathy—it’s fatigue. Even small replies can feel like heavy lifts when you’re drained.
+        Your distance protects the little energy you have left. It’s a tired heart choosing silence to survive.
+
+  utter_burnout/p0060:
+  - text: >
+        Starting feels impossible when the mind is already tired. The gap between intention and action widens under burnout.
+        Your delay isn’t laziness—it’s a sign your system needs relief. The will is present; the energy is not.
+
+  utter_burnout/p0061:
+  - text: >
+        Rest that comes with guilt doesn’t restore. When breaks feel illegal, the body never truly powers down.
+        Your constant alertness shows how long you’ve been under demand. You deserve moments that don’t demand a reason.
+
+  utter_burnout/p0062:
+  - text: >
+        Headaches are the body’s loud way of saying the pace hurts. Screens, deadlines, and pressure stack into pain.
+        Your discomfort is valid evidence that the load has been heavy. You’ve been pushing through more than you admit.
+
+  utter_burnout/p0063:
+  - text: >
+        Distance from friends can be the price of survival. Social energy disappears when basic energy runs low.
+        Your withdrawal doesn’t mean you care less—it means you’re spent. Caring is still there beneath the fatigue.
+
+  utter_burnout/p0064:
+  - text: >
+        Dropping standards is what happens when capacity drops first. Quality follows energy.
+        Your rushed outputs are not your identity; they reflect a season of strain. You’ve been doing what you can.
+
+  utter_burnout/p0065:
+  - text: >
+        Calendars without space erase breathing room. Back-to-back commitments turn time into a tunnel.
+        Your overwhelm is a map of how much you’ve taken on. It’s okay that everything feels nonstop.
+
+  utter_burnout/p0066:
+  - text: >
+        Losing your spark feels like watching color fade. Passion dims when the flame keeps fighting the wind.
+        Your dullness is a sign of wear, not a lack of heart. What mattered still matters—you’re just exhausted.
+
+  utter_burnout/p0067:
+  - text: >
+        Deadlines blur when the mind is overworked. Missing cutoffs isn’t carelessness—it’s a sign your system is maxed out.
+        The numbness you feel at due time shows how long you’ve been running on fumes.
+
+  utter_burnout/p0068:
+  - text: >
+        Zoning out is your brain’s emergency brake. Presence slips when energy is gone.
+        Your blank stares aren’t laziness—they’re proof of overload that needs gentleness.
+
+  utter_burnout/p0069:
+  - text: >
+        When wins feel empty, it’s because your fuel tank is. Achievement can’t land in a body that’s running on zero.
+        Your flat reaction is exhaustion speaking, not ingratitude.
+
+  utter_burnout/p0070:
+  - text: >
+        Pings that once connected now press like weights. Each alert asks for energy you don’t have.
+        Your dread of notifications is a real signal that your load has been too heavy for too long.
+
+  utter_burnout/p0071:
+  - text: >
+        Appetite fades when the body prioritizes survival. Skipped meals are not a virtue—they’re a symptom.
+        Your tired system is choosing the simplest path because it’s overwhelmed.
+
+  utter_burnout/p0072:
+  - text: >
+        Decision fatigue makes even tiny choices feel huge. The brain hesitates when it’s been overused.
+        Your stuckness is evidence of depletion, not lack of ability.
+
+  utter_burnout/p0073:
+  - text: >
+        Joy turns quiet when the flame has been overworked. Hobbies lose color under constant pressure.
+        Your disinterest is a protective pause, not a failure to care.
+
+  utter_burnout/p0074:
+  - text: >
+        Daytime sleepiness is what happens when rest stops being restorative. The body keeps calling for what it hasn’t received.
+        Your drooping eyes are a message that the pace has been harsh.
+
+  utter_burnout/p0075:
+  - text: >
+        Procrastination here is tiredness in disguise. Avoidance grows when starting feels like lifting a mountain.
+        Your delays speak to exhaustion, not laziness.
+
+  utter_burnout/p0076:
+  - text: >
+        Resentment blooms when the tank is empty. Even tiny favors feel like heavy bags.
+        Your irritation is a sign of depletion, not a bad heart.
+
+  utter_burnout/p0077:
+  - text: >
+        Mess builds where energy falls. The room mirrors the mind that’s been sprinting too long.
+        Your clutter is a snapshot of capacity—not your character.
+
+  utter_burnout/p0078:
+  - text: >
+        Morning dread arrives when every day feels like a repeat of strain. The weight meets you before the light does.
+        Your body’s reluctance is telling the truth about how hard it’s been.
+
+  utter_burnout/p0079:
+  - text: >
+        Fragmented focus scatters effort across tabs and tasks. Nothing finishes because everything asks at once.
+        Your scattered screen is a map of overload, not incompetence.
+
+  utter_burnout/p0080:
+  - text: >
+        Numbness is a shield the mind builds under siege. Feeling less is how it keeps going.
+        Your detachment is survival, not indifference.
+
+  utter_burnout/p0081:
+  - text: >
+        Slips and redos multiply when capacity is low. Details hide from a tired mind.
+        Your mistakes aren’t proof of failure—they’re proof you need relief.
+
+  utter_burnout/p0082:
+  - text: >
+        Guilt during rest cancels the point of resting. A body on guard never powers down.
+        Your self-criticism is another weight you’ve been carrying.
+
+  utter_burnout/p0083:
+  - text: >
+        Avoiding meetings is a reflex when you’re running on empty. Even helpful support can feel like another task.
+        Your heaviness before check-ins is a sign of depletion, not disrespect.
+
+  utter_burnout/p0084:
+  - text: >
+        Noise sensitivity spikes when the system is overloaded. Small sounds become storms in a tired head.
+        Your edginess is your body asking for quiet.
+
+  utter_burnout/p0085:
+  - text: >
+        When days blend, it’s because you’ve had no real pause. Time loses edges without recovery.
+        Your blur is a record of nonstop effort.
+
+  utter_burnout/p0086:
+  - text: >
+        Sarcasm can be armor for a worn-out spirit. The joke holds what the heart can’t carry openly.
+        Your sharp tone is fatigue speaking through humor.
+
+  utter_burnout/p0087:
+  - text: >
+        Social energy drains faster than ever when your baseline is empty. Even brief contact costs a lot.
+        Your need to recover after small talk is valid.
+
+  utter_burnout/p0088:
+  - text: >
+        Overcommitting is a tired “yes” trying to please. The regret afterward is the reality check.
+        Your pattern shows a kind heart stretched too thin.
+
+  utter_burnout/p0089:
+  - text: >
+        Perfection loops keep work from leaving your hands. Endless polishing is exhaustion trying to feel safe.
+        Your stuck drafts are not failure—they’re fatigue.
+
+  utter_burnout/p0090:
+  - text: >
+        Doomscrolling numbs what rest should soothe. The glow replaces quiet but never restores.
+        Your late-night scrolling is a tired mind seeking escape.
+
+  utter_burnout/p0091:
+  - text: >
+        Stress often lands in the stomach first. Tightness and queasiness are the body’s way of raising a flag.
+        Your discomfort is a real response to pressure.
+
+  utter_burnout/p0092:
+  - text: >
+        A tired face tells the story your words skip. Looking worn isn’t vanity—it’s a signal.
+        Your reflection is showing how hard you’ve been pushing.
+
+  utter_burnout/p0093:
+  - text: >
+        Shakiness before tasks is a body bracing for effort. The nerves arrive because the load has been relentless.
+        Your tremble is not weakness—it’s a message.
+
+  utter_burnout/p0094:
+  - text: >
+        When weekends feel like weekdays, recovery disappears. The week has no edges to hold you.
+        Your nonstop grind is unsustainable—and your fatigue proves it.
+
+  utter_burnout/p0095:
+  - text: >
+        Fantasies of disappearing are the mind’s way of begging for pause. Wanting to be unreachable is a survival wish.
+        Your urge to vanish comes from exhaustion, not selfishness.
+
+  utter_burnout/p0096:
+  - text: >
+        The loop you feel is real: task after task with no horizon. Cycles with no release make hope feel thin.
+        Your sense of being trapped is understandable.
+
+  utter_burnout/p0097:
+  - text: >
+        Irritability toward loved ones shows how overdrawn your energy is. Care is still there—it’s just buried under fatigue.
+        Your short fuse is a symptom, not your identity.
+
+  utter_burnout/p0098:
+  - text: >
+        Creativity dims when the brain is busy surviving. Sparks need oxygen, not alarms.
+        Your empty page is a sign of depletion, not lack of talent.
+
+  utter_burnout/p0099:
+  - text: >
+        “Always behind” is the soundtrack of burnout. The list grows because your capacity has shrunk.
+        Your chase isn’t incompetence—it’s exhaustion narrating your day.
+
+  utter_burnout/p0100:
+  - text: >
+        “Tired of being tired” is the honest summary of burnout. Numbness after long strain is the body’s final alarm.
+        Your exhaustion is real and deserves to be met with care, not demands.
+
+
+
+
   utter_substance_abuse/p0001:
   - text: Recognizing changes in your drinking habits is a very important first step.
       It’s easy to use alcohol as a way to cope with stress, but it can start to impact
@@ -2240,6 +4475,276 @@ responses:
   - text: Recognizing this is a powerful step toward change. Apologize when you’re
       ready, and focus on your own recovery. Rebuilding trust takes time, but it’s
       possible.
+
+  utter_substance_abuse/p0048:
+  - text: >
+        “Last shot” that turns into more can feel like control slipping away. The moment is loud while your limits go quiet.
+        Your regret afterward shows you’re noticing a pattern that’s wearing you down.
+
+  utter_substance_abuse/p0049:
+  - text: >
+        Reaching for the vape on instinct turns minutes into cravings. When it feels like you can’t sit through class without it,
+        the habit is speaking louder than you want. Your unease about that pull is valid.
+
+  utter_substance_abuse/p0050:
+  - text: >
+        Using alcohol to force sleep trades rest for numbness. The night gets quieter but the weight returns in the morning.
+        Your body is asking for calm, not just silence. It makes sense that this cycle feels heavy.
+
+  utter_substance_abuse/p0051:
+  - text: >
+        Cans that replace sleep take more than they give. Shakes, headaches, and the crash are receipts for borrowed energy.
+        Your reliance shows how hard you’ve been pushing. The cost is starting to show up in your days.
+
+  utter_substance_abuse/p0052:
+  - text: >
+        Cravings that show up after stress are the echo of relief you once felt. The mind remembers the shortcut.
+        Noticing the pull is already a sign of awareness. You’re seeing how the loop tries to restart itself.
+
+  utter_substance_abuse/p0053:
+  - text: >
+        Mixing alcohol with medication turns uncertainty into risk. Labels get ignored when the night is loud,
+        but your body still keeps the score. Your worry the next day is your safety instinct trying to protect you.
+
+  utter_substance_abuse/p0054:
+  - text: >
+        Pills that promise focus can blur the rest of you. When performance becomes the only goal, the cost hides in the shadows.
+        Your sense that you’re not yourself without them is a real concern.
+
+  utter_substance_abuse/p0055:
+  - text: >
+        Blackouts erase pages from your story and leave you piecing together a night from photos.
+        That blank space isn’t nothing—it’s a warning your body is sending after the line was crossed.
+
+  utter_substance_abuse/p0056:
+  - text: >
+        Secrets at home build a second life you have to manage. Hiding smells, bottles, and timelines is its own exhaustion.
+        Your urge to conceal shows how unsafe it feels to be seen right now.
+
+  utter_substance_abuse/p0057:
+  - text: >
+        Hangovers don’t end in the morning when grades carry the bruise. Attendance, focus, and output quietly pay the price.
+        Your frustration with the aftermath is understandable—school feels heavier the next day.
+
+  utter_substance_abuse/p0058:
+  - text: >
+        Sticks that multiply during stress are the body’s quick bargain for relief. The moment calms while the count climbs.
+        Your noticing of how fast it adds up is an honest read of the pressure you’re under.
+
+  utter_substance_abuse/p0059:
+  - text: >
+        Allowance that disappears into pods and bottles leaves basic needs unfunded. The receipt is the ache of skipped meals and empty wallets.
+        Your concern about the cost shows you’re seeing the trade clearly now.
+
+  utter_substance_abuse/p0060:
+  - text: >
+        Restlessness, irritability, and headaches when you skip a hit are the body pulling on a thread it got used to.
+        The calm after a puff explains the cycle. Your awareness of this swing is real and important.
+
+  utter_substance_abuse/p0061:
+  - text: >
+        Cheers from a crowd can drown out your own “no.” Matching pace becomes the rule when belonging feels at stake.
+        The heaviness you feel after is the price of being pushed past yourself.
+
+  utter_substance_abuse/p0062:
+  - text: >
+        Using something to silence your thoughts gives relief that fades fast. The problems wait where the buzz ends.
+        Your honesty about numbing out is not weakness—it’s clarity about what the nights have become.
+
+  utter_substance_abuse/p0063:
+  - text: >
+        Promises that break under pressure aren’t proof you don’t care—they’re signs the pull is strong.
+        The cycle of throwing away and buying again shows how tiring this fight has been for you.
+
+  utter_substance_abuse/p0064:
+  - text: >
+        Drinking alone trades noise for isolation. The secret glass at night feels safe yet leaves the room colder.
+        Your move to solo habits says a lot about how heavy it’s become.
+
+  utter_substance_abuse/p0065:
+  - text: >
+        Risky choices while intoxicated blur safety lines. The morning after carries fear you didn’t feel at night.
+        Your discomfort with those memories is your inner alarm working.
+
+  utter_substance_abuse/p0066:
+  - text: >
+        Tolerance creeping up is the quiet shift that demands more for the same effect. What once was enough now barely reaches.
+        Your notice of that change is a signal worth taking seriously.
+
+  utter_substance_abuse/p0067:
+  - text: >
+        Feeling trapped by a habit is a deep kind of tired. The chase for relief keeps circling back to the same spot.
+        Your wish for peace shows a part of you still reaching for something gentler.
+
+  utter_substance_abuse/p0068:
+  - text: >
+        Drinking to face classes turns school into something you have to numb for. The screen may look easier,
+        but your body keeps the cost. Your unease about needing a buzz to log in is real.
+
+  utter_substance_abuse/p0069:
+  - text: >
+        Hidden pods and bottles create a map of secrets in your room. Managing stashes becomes another exhausting task.
+        The hiding itself shows how heavy this has become to carry.
+
+  utter_substance_abuse/p0070:
+  - text: >
+        Borrowed confidence from a bottle fades fast. When social comfort depends on shots,
+        the party ends but the need stays. It makes sense that you’re noticing the trade.
+
+  utter_substance_abuse/p0071:
+  - text: >
+        Boredom can pull habits to the front like a shortcut to feeling something. The hours pass,
+        but the pull grows stronger. Your pattern here is a signal, not a flaw.
+
+  utter_substance_abuse/p0072:
+  - text: >
+        Moving limits feel like promises made on tired nights. “After this week” keeps sliding forward.
+        Seeing the pattern doesn’t mean you’ve failed—it means you’re finally noticing it clearly.
+
+  utter_substance_abuse/p0073:
+  - text: >
+        Morning sips to steady yourself show how the day begins already in debt. The relief is quick,
+        and the cycle tightens. Your body is telling the story before noon.
+
+  utter_substance_abuse/p0074:
+  - text: >
+        Switching sources and code words adds stealth to strain. Secrecy becomes part of the routine.
+        That level of planning reveals how much this habit is shaping your days.
+
+  utter_substance_abuse/p0075:
+  - text: >
+        Drinking games turn limits into dares. Competition masks how far you’ve gone.
+        The regret afterward is the part of you that wanted to stop.
+
+  utter_substance_abuse/p0076:
+  - text: >
+        Pouring after a fight trades conflict for quiet, only for a while. The house calms, but your chest stays heavy.
+        Your reach for the bottle carries the weight of the room.
+
+  utter_substance_abuse/p0077:
+  - text: >
+        The trail of empties is a diary your memory didn’t write. Hiding them doesn’t erase what they record.
+        What you’re seeing is the scale of how much the nights have asked of you.
+
+  utter_substance_abuse/p0078:
+  - text: >
+        Binging after exams turns relief into another strain. The reward becomes a crash.
+        Your blackouts and heavy nights are your body’s way of marking the cost.
+
+  utter_substance_abuse/p0079:
+  - text: >
+        When a hit becomes the starter pistol for studying, focus is borrowed, not built.
+        Your reliance to begin shows how strongly the loop has linked itself to school.
+
+  utter_substance_abuse/p0080:
+  - text: >
+        Moving through the city while intoxicated blurs the line between fun and risk.
+        The morning fear that follows is your inner alarm doing its job.
+
+  utter_substance_abuse/p0081:
+  - text: >
+        Minimizing to friends keeps the habit quiet but keeps you alone with it.
+        The gap between what you say and what you do adds its own weight.
+
+  utter_substance_abuse/p0082:
+  - text: >
+        Restocking taking priority over school shows how the habit schedules your day.
+        Time bends around supply runs, and the hours meant for learning get spent elsewhere.
+
+  utter_substance_abuse/p0083:
+  - text: >
+        Saying yes to parties beside exams writes hangovers into your calendar.
+        The pull toward the night keeps outpacing the morning’s needs.
+
+  utter_substance_abuse/p0084:
+  - text: >
+        Shakes, chills, and palpitations are the body’s rough morning language. The system is paying back what was borrowed.
+        Your crash is evidence of a load your body can’t keep carrying.
+
+  utter_substance_abuse/p0085:
+  - text: >
+        Heartache and bottles often find each other. The buzz softens edges for a moment, then leaves you with sharper ones.
+        Your reach for relief makes sense in pain, even as it adds its own.
+
+  utter_substance_abuse/p0086:
+  - text: >
+        Refilling on reflex shows how momentum has taken over choice. The hand moves before the mind decides.
+        That automatic loop is a sign of how entrenched this has become.
+
+  utter_substance_abuse/p0087:
+  - text: >
+        “Hair of the dog” quiets the crash while tightening the circle. The short calm pulls tomorrow into today.
+        Your body is asking for something steadier than another shot.
+
+  utter_substance_abuse/p0088:
+  - text: >
+        Missed events and broken plans are the echoes of nights that went too far.
+        The disappointment you feel the next day is a measure of what matters to you.
+
+  utter_substance_abuse/p0089:
+  - text: >
+        Anger and alcohol make a rough mix. Words said under a heavy buzz still land with weight.
+        Your regret after is the sober part of you seeing the damage.
+
+  utter_substance_abuse/p0090:
+  - text: >
+        Stacking substances chases intensity while blurring safety. The high climbs fast and so does the risk.
+        Your awareness that you’re layering is important—it’s a warning light.
+
+  utter_substance_abuse/p0091:
+  - text: >
+        Receipts and empty wallets tell a story the night doesn’t. The guilt you feel is a sign your values haven’t left—
+        they’re just being drowned out.
+
+  utter_substance_abuse/p0092:
+  - text: >
+        Acting fine at the table while buzzed is a tiring performance. The mask holds while your body strains.
+        Your quiet during dinner is a kind of survival, not peace.
+
+  utter_substance_abuse/p0093:
+  - text: >
+        Posts and messages from the night linger into the morning. The screen becomes a mirror you don’t want to face.
+        Your cringe is clarity arriving late.
+
+  utter_substance_abuse/p0094:
+  - text: >
+        Coughs, heaviness, and frequent colds are the body’s progress report. The toll is showing up between nights out.
+        Your sense that health is slipping is a true signal.
+
+  utter_substance_abuse/p0095:
+  - text: >
+        When sleep waits for a hit or a drink, rest is being rented, not given. The night ends only after you pay the toll.
+        Your body is asking for calm it can trust.
+
+  utter_substance_abuse/p0096:
+  - text: >
+        A shrinking circle that revolves around the habit leaves real connections behind.
+        The distance you feel from old friends is part of the cost you didn’t want to pay.
+
+  utter_substance_abuse/p0097:
+  - text: >
+        Erasing receipts and chats keeps the story tidy but keeps you alone with it.
+        Hiding the trail becomes another task on a list already full.
+
+  utter_substance_abuse/p0098:
+  - text: >
+        Broken things and lost items are the quiet aftermath of heavy nights. The mess you cover in the morning is part of the bill.
+        Your frustration with the damage makes sense.
+
+  utter_substance_abuse/p0099:
+  - text: >
+        Feeling hollow during the buzz reveals how little relief is left in it. Numbness isn’t comfort—it’s absence.
+        Your emptiness is honesty about what this no longer gives.
+
+  utter_substance_abuse/p0100:
+  - text: >
+        Being tired of the cycle is a clear signal from the part of you that still wants peace.
+        Your exhaustion is real—and it makes sense after so many loops.
+
+
+
+
+
   utter_sleep_problems/p0001:
   - text: Struggling to fall asleep is frustrating and can impact your whole day.
       Try creating a calming bedtime routine—avoid screens before bed, dim the lights,
@@ -2417,6 +4922,285 @@ responses:
   - text: Chronic tiredness deserves attention. Focus on consistent sleep times, a
       comfortable environment, and seek support if the problem doesn’t improve. Your
       rest is important for your health and well-being.
+
+  utter_sleep_problems/p0046:
+  - text: >
+        Lying awake with a mind that won’t rest can make the night feel endless. Exhaustion and alertness collide until sunrise.
+        What you’re feeling isn’t laziness—it’s your thoughts refusing to power down.
+
+  utter_sleep_problems/p0047:
+  - text: >
+        Waking up at odd hours turns sleep into fragments. The night breaks into pieces that never feel enough.
+        Your body keeps trying to rest, but your mind hasn’t followed yet.
+
+  utter_sleep_problems/p0048:
+  - text: >
+        When nights become days, the rhythm of life shifts. The sun rises as your eyes finally close.
+        Your body clock is lost between survival and fatigue—it’s been fighting too long.
+
+  utter_sleep_problems/p0049:
+  - text: >
+        The glow of a phone can replace the comfort of silence. Endless scrolling numbs for a while but steals the hours meant for rest.
+        You’re not weak for seeking distraction—you’re tired of your own thoughts.
+
+  utter_sleep_problems/p0050:
+  - text: >
+        Sleep that doesn’t restore feels unfair. You close your eyes and wake up heavier.
+        It’s not that you’re not resting—it’s that your mind never left the weight behind.
+
+  utter_sleep_problems/p0051:
+  - text: >
+        Overthinking at night fills the dark with noise. The room is quiet but the mind is loud.
+        You’re not alone in those spirals—many nights carry that same loop of thoughts.
+
+  utter_sleep_problems/p0052:
+  - text: >
+        Oversleeping is often the body’s way of hiding from the day. It’s not just rest—it’s escape.
+        You’ve been carrying too much, and sleep became the only pause that doesn’t ask questions.
+
+  utter_sleep_problems/p0053:
+  - text: >
+        Nightmares keep dragging stress into sleep’s only refuge. The body rests but the mind keeps replaying the storm.
+        Your fear upon waking is valid—it means the day’s weight followed you in.
+
+  utter_sleep_problems/p0054:
+  - text: >
+        Background noise becomes a shield against silence that’s too loud. You play sounds to drown thoughts that won’t stop.
+        It’s not the noise you need—it’s peace.
+
+  utter_sleep_problems/p0055:
+  - text: >
+        Caffeine brings borrowed energy that bills you at midnight. The same drink that wakes you ends up stealing your rest.
+        Your body isn’t betraying you—it’s reacting to what it’s been fed.
+
+  utter_sleep_problems/p0056:
+  - text: >
+        Watching the clock while sleepless turns time into pressure. Each passing minute adds weight instead of rest.
+        You’re not failing at sleep—you’re anxious about losing it.
+
+  utter_sleep_problems/p0057:
+  - text: >
+        Long naps that stretch into evening confuse the body. What starts as recovery ends as restlessness.
+        Your system’s timing is off because exhaustion has no schedule anymore.
+
+  utter_sleep_problems/p0058:
+  - text: >
+        Falling asleep on your desk is fatigue taking over permission. The brain shuts down when you won’t.
+        Your body is begging for rest wherever it can find it.
+
+  utter_sleep_problems/p0059:
+  - text: >
+        Waking up sweating in the dark isn’t just about heat—it’s anxiety leaking into sleep.
+        The body still remembers what the day felt like.
+
+  utter_sleep_problems/p0060:
+  - text: >
+        Nighttime fear grows in the quiet. Shadows, noises, and imagination mix into panic.
+        What feels like paranoia is your body reacting to too many long, tense nights.
+
+  utter_sleep_problems/p0061:
+  - text: >
+        All-nighters become the language of pressure. The night becomes workspace, not rest.
+        You’ve trained your body to chase deadlines instead of dreams.
+
+  utter_sleep_problems/p0062:
+  - text: >
+        Being tired but unable to nap is its own frustration. The body begs for rest but the mind refuses to hand it over.
+        It’s a tug-of-war you didn’t sign up for.
+
+  utter_sleep_problems/p0063:
+  - text: >
+        Dreams filled with exams and projects mean your brain never clocks out.
+        Even in sleep, the grind continues. It’s no wonder you wake up tired.
+
+  utter_sleep_problems/p0064:
+  - text: >
+        Noise cutting through the night keeps your nerves awake. Rest breaks each time a sound pierces it.
+        You’re reacting because your system hasn’t had real quiet in a long time.
+
+  utter_sleep_problems/p0065:
+  - text: >
+        Waiting for a message turns night into a vigil. The phone glows while rest drifts further away.
+        Your sleeplessness isn’t random—it’s hope keeping you awake.
+
+  utter_sleep_problems/p0066:
+  - text: >
+        Oversleeping past alarms is what happens when the body keeps collecting unpaid rest. Your mornings aren’t laziness—
+        they’re evidence of nights that never truly restored you.
+
+  utter_sleep_problems/p0067:
+  - text: >
+        The frozen moments of sleep paralysis feel terrifyingly real. Your mind wakes while your body stays anchored.
+        That fear lingers because the experience is intense, not because you’re weak.
+
+  utter_sleep_problems/p0068:
+  - text: >
+        “Last game” stretching till sunrise turns night into a scoreboard. The rush keeps your brain lit while your body begs for quiet.
+        The exhaustion after shows the cost the next day pays.
+
+  utter_sleep_problems/p0069:
+  - text: >
+        Shared rooms can turn rest into negotiation. Light, sounds, and screens carve sleep into pieces.
+        Your tiredness makes sense when your space isn’t fully yours at night.
+
+  utter_sleep_problems/p0070:
+  - text: >
+        Screen glow tricks the brain into thinking the day isn’t over. The mind keeps sprinting while the room is dark.
+        Your wired feeling after scrolling is a normal reaction to constant light.
+
+  utter_sleep_problems/p0071:
+  - text: >
+        Early call times pull you out before your system is ready. The clock demands what your body can’t give yet.
+        That heavy feeling in morning classes is the price of misaligned schedules.
+
+  utter_sleep_problems/p0072:
+  - text: >
+        Headaches after short nights are the body’s protest. Focus and comfort fade when sleep is borrowed instead of given.
+        Your morning throbs are proof of how hard you’ve pushed.
+
+  utter_sleep_problems/p0073:
+  - text: >
+        Notifications slice the night into fragments. A lit screen becomes a tiny alarm clock you didn’t ask for.
+        Your broken rest is a result of constant digital knocking.
+
+  utter_sleep_problems/p0074:
+  - text: >
+        Heat and humidity turn beds into restless places. Sweat replaces comfort and the night stretches long.
+        Your sticky wake-ups are the weather writing itself into your sleep.
+
+  utter_sleep_problems/p0075:
+  - text: >
+        A single mosquito can turn silence into a chase. Buzzing and bites pull you back from the edge of rest.
+        Your interrupted sleep is a real battle with tiny enemies.
+
+  utter_sleep_problems/p0076:
+  - text: >
+        Neighborhood music and late-night singing replace lullabies with noise. Walls don’t hold sound the way you need.
+        Your frustration is the echo of rest being pushed aside.
+
+  utter_sleep_problems/p0077:
+  - text: >
+        Morning construction steals the last hour that should have restored you. Hammers arrive before you’re ready to rise.
+        Your short sleep isn’t a habit—it’s a schedule imposed from outside.
+
+  utter_sleep_problems/p0078:
+  - text: >
+        Oversleeping and waking to panic leaves guilt where rest should be. The day starts in a sprint you didn’t plan.
+        Your fear is a sign that sleep debt finally took the wheel.
+
+  utter_sleep_problems/p0079:
+  - text: >
+        Heavy mornings and slow thoughts are the fog of sleep inertia. The body needs time to catch up with the alarm.
+        Your sluggish start is a normal response to disrupted rest.
+
+  utter_sleep_problems/p0080:
+  - text: >
+        Vivid dreams can feel like living a second shift. The mind works overtime while the body lies still.
+        Waking tired after intense dreams makes sense.
+
+  utter_sleep_problems/p0081:
+  - text: >
+        Sore jaws and tight cheeks tell a story from the night. Clenched teeth carry daytime pressure into sleep.
+        Your morning ache is stress that never clocked out.
+
+  utter_sleep_problems/p0082:
+  - text: >
+        Restless legs pull you away from stillness just when you need it. The urge to move breaks the rhythm of rest.
+        Your discomfort is real, even if it’s hard to describe.
+
+  utter_sleep_problems/p0083:
+  - text: >
+        Gasping awake shakes the quiet out of the room. Sudden breaths leave a lingering fear.
+        Your body is sounding an alarm in the middle of the night, and it feels unsettling.
+
+  utter_sleep_problems/p0084:
+  - text: >
+        Burning in the chest at night turns beds into battlefields. Lying down invites the discomfort back.
+        Your interrupted rest is a reminder of how the day’s meals follow you into sleep.
+
+  utter_sleep_problems/p0085:
+  - text: >
+        Crowded beds and shared space make rest a rare luxury. Bodies bump and blankets shift all night.
+        Your tiredness is the math of too many people and too little space.
+
+  utter_sleep_problems/p0086:
+  - text: >
+        Brownouts erase the small comforts that make nights bearable. Heat returns and sleep slips away.
+        Your wakefulness is a direct echo of a room without air.
+
+  utter_sleep_problems/p0087:
+  - text: >
+        Horror scenes replay in the dark like they own the room. The mind keeps the images long after the credits.
+        Your sleeplessness is your body guarding itself from what felt unsafe.
+
+  utter_sleep_problems/p0088:
+  - text: >
+        Hunger ringing at 2 am pulls you out of rest. The stomach’s call is louder than the night’s silence.
+        Your wake-ups are the body asking for fuel at the wrong hour.
+
+  utter_sleep_problems/p0089:
+  - text: >
+        Cold rooms make blankets into revolving doors. Comfort slips each time the chill returns.
+        Your broken sleep is the temperature writing itself on your skin.
+
+  utter_sleep_problems/p0090:
+  - text: >
+        Commute naps steal awareness along with fatigue. Stations pass while your body collects minutes of sleep.
+        Your groggy arrivals are proof you’re running on leftovers.
+
+  utter_sleep_problems/p0091:
+  - text: >
+        Library naps are tiredness choosing public pause over collapse. The body takes rest wherever it finds it.
+        Your embarrassment is real, but so is the exhaustion that led there.
+
+  utter_sleep_problems/p0092:
+  - text: >
+        Thin mattresses and stubborn springs turn nights into endurance tests. Morning soreness is the receipt.
+        Your aches point to a bed that didn’t hold you kindly.
+
+  utter_sleep_problems/p0093:
+  - text: >
+        Holidays stretch bedtime until it forgets the way back. After the break, the clock refuses to listen.
+        Your late nights now are the echo of days that drifted.
+
+  utter_sleep_problems/p0094:
+  - text: >
+        Tracking every number can turn rest into a report card. Pressure rises where peace should be.
+        Your anxiety around sleep scores keeps you awake more than it helps.
+
+  utter_sleep_problems/p0095:
+  - text: >
+        Dreams that bring back people you miss leave a soft ache in the morning. Sleep becomes a reunion and a goodbye.
+        Your heaviness after is tenderness that lingered.
+
+  utter_sleep_problems/p0096:
+  - text: >
+        Evening naps feel kind but steal the night. Rest shows up at the wrong time and stays too long.
+        Your wide-awake hours later are the price of that early pause.
+
+  utter_sleep_problems/p0097:
+  - text: >
+        Checking academic apps before bed pulls you back into work. The mind starts listing while the body wants stillness.
+        Your wired nights are the cost of one more peek.
+
+  utter_sleep_problems/p0098:
+  - text: >
+        Talking in your sleep is the brain sorting out noise while you’re offline. Words slip out and surprise everyone.
+        Your roommates’ stories are proof of how hard your mind keeps working.
+
+  utter_sleep_problems/p0099:
+  - text: >
+        Morning aches map the positions your body tried to hold. Twists and slumps leave their marks at sunrise.
+        Your stiffness is a message from the night’s awkward shapes.
+
+  utter_sleep_problems/p0100:
+  - text: >
+        Being tired of broken sleep is honest and human. Nights have been long and mornings unforgiving.
+        Your wish for real rest is a gentle truth you’re finally naming.
+
+
+
+
   utter_time_management/p0001:
   - text: Many students struggle with finishing tasks on time, especially with so
       much to balance. Try breaking big assignments into smaller parts and setting
@@ -2602,6 +5386,270 @@ responses:
   utter_time_management/p0048:
   - text: Feeling behind is common. Focus on what you’ve accomplished and set realistic
       expectations for yourself. Progress takes time, and you’re doing your best.
+
+  utter_time_management/p0049:
+  - text: >
+        Hours slip when panic replaces planning. What felt like a small delay becomes a midnight sprint.
+        Your regret isn’t laziness—it’s the weight of starting late too many times.
+
+  utter_time_management/p0050:
+  - text: >
+        When everything looks urgent, the mind chooses nothing. Staring at the list is your brain asking for air.
+        Feeling stuck is a sign the load outgrew your capacity for the moment.
+
+  utter_time_management/p0051:
+  - text: >
+        Underestimating time is a quiet trap. “One hour” turns into the whole night.
+        Your missed estimates don’t mean you’re careless—they mean the task was bigger than it looked.
+
+  utter_time_management/p0052:
+  - text: >
+        Splitting focus turns progress into fragments. Tabs multiply while results stay thin.
+        Your scattered attention is a symptom of a day asking for too much at once.
+
+  utter_time_management/p0053:
+  - text: >
+        Perfecting pieces can steal the whole project. Details glow while deadlines pass.
+        Your urge to polish is understandable—but it’s been costing you the finish line.
+
+  utter_time_management/p0054:
+  - text: >
+        Deadlines don’t shout until it’s late. Pins and notes fade when the day is loud.
+        Your last-hour panic is a reminder that memory competes with noise.
+
+  utter_time_management/p0055:
+  - text: >
+        A kind yes can crowd a calendar. Overbooking feels generous until the bill arrives in exhaustion.
+        Your schedule shows a caring heart stretched past its hours.
+
+  utter_time_management/p0056:
+  - text: >
+        Planning without starting is effort that never lands. Color-coded lists can’t submit themselves.
+        Your neat system deserves a body that has space to act.
+
+  utter_time_management/p0057:
+  - text: >
+        Feeds are designed to borrow your minutes without receipts. You look up and the night is gone.
+        Your lost time is not weakness—it’s how these loops were built.
+
+  utter_time_management/p0058:
+  - text: >
+        Breaks that balloon steal momentum and bring guilt. Rest matters, but time slipped away quietly.
+        Your frustration is the sound of a rhythm that didn’t return.
+
+  utter_time_management/p0059:
+  - text: >
+        Waiting for pressure to move you turns urgency into fuel and recovery into a rumor.
+        Your last-minute sprints tell a story of a system surviving, not thriving.
+
+  utter_time_management/p0060:
+  - text: >
+        Tiny tasks left undone become a pile that blocks the door. Points leak from places that looked small.
+        Your day is heavy because the little things added up.
+
+  utter_time_management/p0061:
+  - text: >
+        Two calendars in one life pull in opposite directions. Meetings and modules fight for the same hour.
+        Your struggle to balance both is real—it’s not a character flaw.
+
+  utter_time_management/p0062:
+  - text: >
+        Habitual lateness often hides in misjudged minutes. Travel time isn’t just distance—it’s unpredictability.
+        Your intention is there; the clock just keeps winning.
+
+  utter_time_management/p0063:
+  - text: >
+        A plan you don’t follow becomes another weight. Moving blocks around can feel like progress without progress.
+        Your routine needs protection from constant edits.
+
+  utter_time_management/p0064:
+  - text: >
+        Future-you looks powerful on paper, but real you is tired. Night promises crumble under sleepy eyes.
+        Your plans failed because energy did, not because you didn’t care.
+
+  utter_time_management/p0065:
+  - text: >
+        Back-to-back schedules leave no room for being human. Transitions take time even when you don’t plan them.
+        Your rush is the cost of a calendar without buffers.
+
+  utter_time_management/p0066:
+  - text: >
+        Restarting gives the illusion of fresh momentum while stealing hours you already spent.
+        Your restarts are a sign of frustration, not failure—but the time still leaves.
+
+  utter_time_management/p0067:
+  - text: >
+        Deadline cleaning feels productive because it is—but not for the thing that needs you.
+        Your spotless room is a postcard from a task you were trying to escape.
+
+  utter_time_management/p0068:
+  - text: >
+        Group chats can turn work time into commentary time. Threads stretch while your document waits.
+        Your focus is paying for conversations that never end.
+
+  utter_time_management/p0069:
+  - text: >
+        Tech delays turn minutes into sand slipping through your plan. Progress pauses while bars crawl across the screen.
+        Your schedule didn’t fail—you were stuck in a loading bar.
+
+  utter_time_management/p0070:
+  - text: >
+        Work finished but unsent feels like running a race and stopping at the tape. The effort is real even if the portal says otherwise.
+        Your frustration makes sense—submission is part of the time it takes.
+
+  utter_time_management/p0071:
+  - text: >
+        Meetings that stretch past their edge steal the hours meant for recovery. The agenda loops while your night disappears.
+        Your tired evening is the receipt for time that wasn’t guarded.
+
+  utter_time_management/p0072:
+  - text: >
+        Lines that snake through hallways rewrite the day you planned. Bureaucracy takes the slot you saved for learning.
+        Your derailed list is not a flaw—it’s the cost of the queue.
+
+  utter_time_management/p0073:
+  - text: >
+        Research hides its hours inside every source you open. Finding the right words takes longer than naming the task.
+        Your misjudged timeline is a common trap, not a failure.
+
+  utter_time_management/p0074:
+  - text: >
+        Formatting feels like progress because it looks neat, but the page stays empty. Layout can’t replace the missing paragraph.
+        Your time went to polish when you needed prose.
+
+  utter_time_management/p0075:
+  - text: >
+        Calendar math with many people is slow math. The search for a shared hour can outlast the work meant for it.
+        Your drained week shows how coordination taxes time.
+
+  utter_time_management/p0076:
+  - text: >
+        Closing times don’t bend for last-minute pushes. Doors shut while your effort still warms.
+        Your missed windows are a reminder that timing is part of the task.
+
+  utter_time_management/p0077:
+  - text: >
+        Every switch charges a toll in focus. Momentum breaks and has to be rebuilt from zero.
+        Your slower pace reflects the cost of shifting lanes too often.
+
+  utter_time_management/p0078:
+  - text: >
+        Traffic adds hours you never planned to spend. The city’s rhythm overrules your calendar.
+        Your late start isn’t a lack of will—it’s a road that wouldn’t move.
+
+  utter_time_management/p0079:
+  - text: >
+        Edits expand to fill the space you give them. The final pass becomes another project.
+        Your timeline slipped because polishing became the work.
+
+  utter_time_management/p0080:
+  - text: >
+        Breaks without a boundary dissolve into the evening. Rest needs a frame to return you.
+        Your missing hours are pauses that never found their end.
+
+  utter_time_management/p0081:
+  - text: >
+        Energy has seasons inside a day. Heavy tasks placed in low tides will struggle to stand.
+        Your mismatch is human, not reckless—your plan forgot your body.
+
+  utter_time_management/p0082:
+  - text: >
+        Waiting for motivation hands your clock to a feeling that comes and goes. The day passes while you wait at the door.
+        Your delay isn’t laziness—it’s a plan that gave mood the keys.
+
+  utter_time_management/p0083:
+  - text: >
+        A generous heart can bankrupt a schedule. Helping first pushes your own work to the edge.
+        Your lateness speaks of care that ran beyond your hours.
+
+  utter_time_management/p0084:
+  - text: >
+        Repeating deadlines hide in plain sight. Routine asks for attention the same way emergencies do.
+        Your surprise every week is the rhythm you were too busy to hear.
+
+  utter_time_management/p0085:
+  - text: >
+        Rewatching to catch crumbs takes a feast of time. Precision costs hours when progress needed minutes.
+        Your thoroughness met a clock that couldn’t wait.
+
+  utter_time_management/p0086:
+  - text: >
+        Getting ready is part of arriving. Uncounted prep time steals the punctuality you aimed for.
+        Your delays began before the door ever opened.
+
+  utter_time_management/p0087:
+  - text: >
+        Deadlines that huddle on one date feel like a wave breaking at once. The crash isn’t your weakness—it’s clustering.
+        Your overwhelm is the math of too many things at the same hour.
+
+  utter_time_management/p0088:
+  - text: >
+        Version chaos is time leaking through cracks. Files argue while the clock keeps moving.
+        Your lost hours are the price of not knowing which “final” is final.
+
+  utter_time_management/p0089:
+  - text: >
+        Admin details look small until they push you past cutoff. Names, types, and formats carry hidden minutes.
+        Your scramble at the end shows how logistics also take time.
+
+  utter_time_management/p0090:
+  - text: >
+        Email refresh feels productive but splits your focus into fragments. Each ping resets the climb.
+        Your drift is a sign that the inbox took more than messages.
+
+  utter_time_management/p0091:
+  - text: >
+        Lab slots end even when experiments don’t. The clock closes doors that curiosity wants to keep open.
+        Your half-finished work is the calendar, not your effort.
+
+  utter_time_management/p0092:
+  - text: >
+        Lost files turn work into a search party. Order saves minutes you can’t afford to lose.
+        Your delay came from chaos, not from lack of trying.
+
+  utter_time_management/p0093:
+  - text: >
+        Directions skipped in speed return as hours spent redoing. The rubric is a shortcut disguised as rules.
+        Your repeat lap is the cost of racing ahead.
+
+  utter_time_management/p0094:
+  - text: >
+        Memory is a leaky planner. Tasks slip through unless the page holds them.
+        Your scattered day is what happens when plans live only in your head.
+
+  utter_time_management/p0095:
+  - text: >
+        Grouping similar work lets momentum carry you. Scattering it makes you start from zero each time.
+        Your slow progress is a patchwork of fresh starts.
+
+  utter_time_management/p0096:
+  - text: >
+        Dead batteries turn effort into pause. Power is part of preparation.
+        Your interrupted flow wasn’t a lack of will—it was a missing charge.
+
+  utter_time_management/p0097:
+  - text: >
+        Other people’s lateness rewrites your day. Waiting becomes the task you never scheduled.
+        Your lost hour is proof you showed up even when others didn’t.
+
+  utter_time_management/p0098:
+  - text: >
+        Big efforts need a landing strip. Without recovery, the next task inherits your fatigue.
+        Your crash is the body collecting what the plan forgot.
+
+  utter_time_management/p0099:
+  - text: >
+        Unsaved work is time that existed and vanished. The clock doesn’t return what the app lost.
+        Your frustration is grief for minutes that won’t come back.
+
+  utter_time_management/p0100:
+  - text: >
+        Feeling done with the chase is a clear signal. You’ve been sprinting beside a clock that never slows.
+        Your exhaustion is honest—and it deserves to be heard.
+
+
+
+
   utter_financial_stress/p0001:
   - text: Financial worries about tuition are very common among students. Try reaching
       out to your school’s financial aid office to see if there are scholarships,
@@ -2800,10 +5848,278 @@ responses:
   - text: Constant worry is exhausting. Remember, your financial situation can improve
       with time and the right support. Be patient with yourself and reach out when
       you need help.
+
   utter_financial_stress/p0048:
   - text: Stability takes time and planning. Set small, achievable goals and celebrate
       progress. Reach out to mentors or financial advisors for guidance. You’re not
       alone in your journey.
+
+  utter_financial_stress/p0049:
+  - text: >
+      Stretching a small allowance turns days into math problems. By midweek, the coins start counting you back.
+      Your worry is real—you’ve been making each peso work twice.
+
+  utter_financial_stress/p0050:
+  - text: >
+        Hunger as a budgeting strategy is a heavy trade. The body pays so the wallet can breathe.
+        Your choice to skip meals isn’t laziness—it’s a sign of how tight things have become.
+
+  utter_financial_stress/p0051:
+  - text: >
+        When materials cost more than motivation, learning feels priced. Borrowed books and delayed buys carry quiet shame.
+        Your stress over fees shows how hard you’re trying to keep up.
+
+  utter_financial_stress/p0052:
+  - text: >
+        Borrowing small amounts stacks into heavy guilt. “Next time” becomes another promise on your chest.
+        Your embarrassment is the mark of someone who wants to make things right.
+
+  utter_financial_stress/p0053:
+  - text: >
+        Being a student and a provider at the same time splits one heart into two roles.
+        Your pressure to help with bills doesn’t mean you’re ungrateful—it means the load is real.
+
+  utter_financial_stress/p0054:
+  - text: >
+        Event fees can turn belonging into a purchase. Saying no to joiners’ fees can feel like saying no to friends.
+        Your absence isn’t disinterest—it’s the budget speaking.
+
+  utter_financial_stress/p0055:
+  - text: >
+        Outdated gadgets make simple tasks feel uphill. Crashes and slow apps aren’t a lack of effort.
+        Your frustration is valid—you’re working with limits that hide your ability.
+
+  utter_financial_stress/p0056:
+  - text: >
+        Fare that creeps up steals from every other envelope. Commuting becomes the meter that never stops.
+        Your tired feet and tight budget tell the same story.
+
+  utter_financial_stress/p0057:
+  - text: >
+        Tuition notices turn calendars into countdowns. Fear of being dropped sits beside your school bag.
+        Your anxiety here is understandable—education feels like it’s charging at the door.
+
+  utter_financial_stress/p0058:
+  - text: >
+        Hiding money worries takes energy you don’t have. Smiling through invitations costs more than the bill itself.
+        Your silence is survival, not dishonesty.
+
+  utter_financial_stress/p0059:
+  - text: >
+        Choosing between data and dinner isn’t a real choice—it’s a corner. Classes need load while your body needs food.
+        Your stress is the proof that both are necessary.
+
+  utter_financial_stress/p0060:
+  - text: >
+        Skipping medicine is another kind of debt—the body collects later. Pain postponed becomes pain with interest.
+        Your guilt shows you know your health matters, even when pesos argue.
+
+  utter_financial_stress/p0061:
+  - text: >
+        Shifts and studies running side by side drain the same battery. Earning to learn is noble and exhausting.
+        Your fatigue is the receipt for carrying both.
+
+  utter_financial_stress/p0062:
+  - text: >
+        Asking for extra when home is already tight feels like pulling from the same thin blanket.
+        Your hesitation comes from care, not pride. The weight you feel is love mixed with worry.
+
+  utter_financial_stress/p0063:
+  - text: >
+        Monthly dues turn community into a bill. Avoiding meetings isn’t apathy—it’s protection of a fragile budget.
+        Your stress around collections makes sense.
+
+  utter_financial_stress/p0064:
+  - text: >
+        Rent reminders echo louder at night. A bed space that might slip away makes sleep feel conditional.
+        Your fear is a map of how close the edge feels.
+
+  utter_financial_stress/p0065:
+  - text: >
+        Dress codes and required outfits hide a price tag. Repeating clothes isn’t a flaw—it’s a strategy.
+        Your embarrassment is understandable in a world that forgets cost.
+
+  utter_financial_stress/p0066:
+  - text: >
+        Group budgets can silence the one with the thinnest wallet. Equal shares don’t feel equal when pockets aren’t.
+        Your quiet isn’t weakness—it’s caution in a tight situation.
+
+  utter_financial_stress/p0067:
+  - text: >
+        Exit fees arriving at the finish line feel unfair. Celebration gets delayed by receipts.
+        Your worry about ceremonies is real—you’ve earned the moment even if the payments lag.
+
+  utter_financial_stress/p0068:
+  - text: >
+        Meticulous lists and peso-by-peso tracking show determination, not obsession.
+        Your discipline is strong—even when the numbers still come up short.
+
+  utter_financial_stress/p0069:
+  - text: >
+        Allowances that arrive late turn weeks into waiting rooms. Plans stay on hold while you check for updates again and again.
+        Your uncertainty is real—you’re budgeting around a moving target.
+
+  utter_financial_stress/p0070:
+  - text: >
+        When canteen prices climb, lunch starts to feel like a luxury. A simple meal shouldn’t require this much math.
+        Your worry at the counter makes sense in days like these.
+
+  utter_financial_stress/p0071:
+  - text: >
+        Pages, ink, and copies add up quietly until the coins run out loud. Requirements shouldn’t empty your wallet to be valid.
+        Your stress over printing is proof of how constant the asks have been.
+
+  utter_financial_stress/p0072:
+  - text: >
+        Connectivity has become a basic need with a premium price. Load, promos, and bills keep knocking at the same small budget.
+        Your frustration shows how essential and expensive the signal has become.
+
+  utter_financial_stress/p0073:
+  - text: >
+        Quick loans promise air and charge it back with interest. What started as help now follows you with due dates.
+        Your regret is understandable—the fees multiply faster than relief.
+
+  utter_financial_stress/p0074:
+  - text: >
+        Small e-wallet fees nibble at every transfer until your balance looks thinner than planned.
+        Your surprise at the deductions is valid—those little cuts add up.
+
+  utter_financial_stress/p0075:
+  - text: >
+        With every out-of-network withdrawal, your allowance shrinks a little more. Accessing your own money shouldn’t cost this much.
+        Your careful trips to fee-free ATMs show how tight things are.
+
+  utter_financial_stress/p0076:
+  - text: >
+        A lost wallet erases a week’s safety net in a moment. Replacing IDs and cash takes time you don’t have.
+        Your shaken plans and heavy heart are both understandable.
+
+  utter_financial_stress/p0077:
+  - text: >
+        Broken phones turn school days into hurdles. Repairs ask for money you already stretched thin.
+        Your worry about missing classes is real—the gadget is part of your toolkit.
+
+  utter_financial_stress/p0078:
+  - text: >
+        Family emergencies don’t ask the calendar if you’re ready. Your school budget bends to needs that matter.
+        The strain you feel is care meeting limited funds.
+
+  utter_financial_stress/p0079:
+  - text: >
+        Electricity that runs out midweek turns rest into rationing. Prepaid meters and high bills keep you counting every hour.
+        Your stress is the number on the screen translated into life.
+
+  utter_financial_stress/p0080:
+  - text: >
+        Water, laundry, and other basics seem small until they stack into a month’s worth of strain.
+        Your surprise at the total is a real look at how survival costs add up.
+
+  utter_financial_stress/p0081:
+  - text: >
+        Keeping up with friends’ spending can feel like buying your seat at the table. Saying yes costs more than the receipt.
+        Your quiet pressure is the price of wanting to belong.
+
+  utter_financial_stress/p0082:
+  - text: >
+        Tingi stretches the day but taxes the month. Small packs fit the pocket while stealing from the bigger picture.
+        Your sense of being stuck is part of living day-to-day.
+
+  utter_financial_stress/p0083:
+  - text: >
+        Even secondhand books can feel like new prices. When access to learning is behind a tag, motivation gets trimmed.
+        Your hunt for affordable copies shows commitment in a tight season.
+
+  utter_financial_stress/p0084:
+  - text: >
+        Work done and pay delayed turns effort into uncertainty. Budgets collapse when income misses the schedule.
+        Your waiting is heavy because every peso already had a job.
+
+  utter_financial_stress/p0085:
+  - text: >
+        Unpaid internships ask for time and money at once. Fare and food become the silent requirements.
+        Your strain is valid—you’re investing with nothing coming back now.
+
+  utter_financial_stress/p0086:
+  - text: >
+        Allowance with strings attached makes every purchase a report. Oversight may mean care, but it still feels tight.
+        Your tension around asking shows how thin the room to breathe is.
+
+  utter_financial_stress/p0087:
+  - text: >
+        Padala that comes late and rates that shrink its worth make planning hard. The distance takes a cut before the money arrives.
+        Your waiting and recalculating both tell the same story.
+
+  utter_financial_stress/p0088:
+  - text: >
+        Forms, lines, and stamps can turn help into another hurdle. When support is slow, stress grows.
+        Your overwhelm is a normal response to a maze of requirements.
+
+  utter_financial_stress/p0089:
+  - text: >
+        Library fines place a lock on learning. Small penalties stand between you and the next step.
+        Your worry about clearance reflects how every peso is spoken for.
+
+  utter_financial_stress/p0090:
+  - text: >
+        Replacing an ID costs more than plastic—it costs time and peace. The fee lands hardest when the budget is already thin.
+        Your stress here is completely understandable.
+
+  utter_financial_stress/p0091:
+  - text: >
+        Document requests charge in many small lines that add up. Each stamp and copy chips the allowance further.
+        Your hesitation to proceed is the math of limited funds.
+
+  utter_financial_stress/p0092:
+  - text: >
+        Thesis printing turns pages into pesos quickly. Requirements multiply while your wallet tries to keep up.
+        Your worry as deadlines approach is a real, heavy feeling.
+
+  utter_financial_stress/p0093:
+  - text: >
+        Graduation should feel like a celebration, not an invoice. Rentals, photos, and clearances stack into a wall.
+        Your fear of missing it because of cost is valid.
+
+  utter_financial_stress/p0094:
+  - text: >
+        Inflation shows up at the sari-sari before the headlines. Coins that once bought a treat now buy a reminder.
+        Your frustration is the economy touching your daily life.
+
+  utter_financial_stress/p0095:
+  - text: >
+        Multiple transfers turn a simple commute into a budget puzzle. Every hop takes a bite.
+        Your transport stress is real when routes and fares keep changing.
+
+  utter_financial_stress/p0096:
+  - text: >
+        Money parked in slow refunds is money you can’t use. Waiting for it makes the week tighter.
+        Your irritation is fair—plans paused need answers.
+
+  utter_financial_stress/p0097:
+  - text: >
+        One-use materials feel like buying grades by the piece. The rubric should not empty your pocket.
+        Your frustration with required brands makes sense.
+
+  utter_financial_stress/p0098:
+  - text: >
+        Online scams steal more than funds—they steal trust. The loss lingers past the transaction.
+        Your anger and worry after being duped are both valid.
+
+  utter_financial_stress/p0099:
+  - text: >
+        A drained e-wallet shakes your sense of safety. The numbers change while you sleep.
+        Your shock and stress are real—security slipping hurts most when every peso counts.
+
+  utter_financial_stress/p0100:
+  - text: >
+        Being tired of counting every peso is an honest truth. You’ve been budgeting with courage for too long.
+        Your exhaustion makes sense in a season that keeps asking more than it gives.
+
+
+
+
+
+
+
   utter_bullying/p0001:
   - text: Being made fun of is hurtful and can impact your self-esteem. You deserve
       respect and kindness from others. Try to avoid reacting to bullies, and reach
@@ -2987,6 +6303,266 @@ responses:
   utter_bullying/p0049:
   - text: You may feel alone, but support is out there. Start by reaching out to a
       counselor, teacher, or support group. You deserve kindness and help.
+
+  utter_bullying/p0050:
+  - text: >
+        Names can bruise even without a mark. When insults echo through your day, it’s not thin skin—it’s real harm to your sense of safety.
+        You deserve a space where your presence isn’t turned into a punchline.
+
+  utter_bullying/p0051:
+  - text: >
+        Group chats can feel like rooms you can’t enter but can still hear. Emojis and memes carry sting the same way words do.
+        Your hurt makes sense—screens don’t soften the blow.
+
+  utter_bullying/p0052:
+  - text: >
+        Being left out on purpose turns hallways into cold places. Silence becomes the message.
+        Your loneliness here isn’t overreacting—it’s the cost of coordinated exclusion.
+
+  utter_bullying/p0053:
+  - text: >
+        Rumors rewrite your story without your consent. Whispered versions spread faster than truth.
+        Your heaviness comes from protecting your name while everyone else borrows it.
+
+  utter_bullying/p0054:
+  - text: >
+        Comments about your body reach deeper than they admit. Jokes about looks don’t fade when the bell rings.
+        Your discomfort is valid—your appearance was never meant to be public property.
+
+  utter_bullying/p0055:
+  - text: >
+        Shoves and blocked paths teach your body to flinch. Even small hits stack into fear.
+        Your sense of unsafety is real—your steps shouldn’t require defense.
+
+  utter_bullying/p0056:
+  - text: >
+        Mocked voices make speaking feel dangerous. Recitations turn into stages for ridicule.
+        Your hesitation to talk isn’t weakness—it’s protection after being laughed at.
+
+  utter_bullying/p0057:
+  - text: >
+        A camera aimed without consent steals control of your image. Clips travel while your dignity is left behind.
+        Your shock and shame are natural—privacy wasn’t respected.
+
+  utter_bullying/p0058:
+  - text: >
+        Messed-with belongings make school feel like a trap. Every missing item is another reminder you’re being targeted.
+        Your frustration is proof that disrespect has crossed into your space.
+
+  utter_bullying/p0059:
+  - text: >
+        Laughter from adults turns pain into “just a joke.” Protection feels far when authority shrugs.
+        Your sense of being unguarded is valid—you weren’t taken seriously.
+
+  utter_bullying/p0060:
+  - text: >
+        Anonymous posts hide faces but not impact. Hints and blind items still hit their mark.
+        Your dread opening those pages is a response to being hunted in the shadows.
+
+  utter_bullying/p0061:
+  - text: >
+        Grades used as weapons cut either way. Pride and shame become tools to isolate you.
+        Your ache around academics isn’t about numbers—it’s about respect that went missing.
+
+  utter_bullying/p0062:
+  - text: >
+        Screenshots can turn private words into public traps. Fear of exposure keeps you small.
+        Your anxiety here is understandable—trust was turned into leverage.
+
+  utter_bullying/p0063:
+  - text: >
+        Passions shouldn’t be passports for ridicule. Joy that gets mocked learns to hide.
+        Your interests deserve room to breathe without being turned into jokes.
+
+  utter_bullying/p0064:
+  - text: >
+        Being made the class clown without choosing it steals dignity piece by piece.
+        Your exhaustion is the cost of carrying a role that was forced on you.
+
+  utter_bullying/p0065:
+  - text: >
+        Imitated movements make your body feel like a spectacle. Every step gets watched for material.
+        Your unease is real—no one should be turned into content.
+
+  utter_bullying/p0066:
+  - text: >
+        Leaked numbers and prank orders pull harassment into your pocket. Peace gets interrupted by strangers.
+        Your irritation and fear are both valid—boundaries were crossed.
+
+  utter_bullying/p0067:
+  - text: >
+        Ideas erased on purpose shrink your voice. Contribution shouldn’t require fighting to be heard.
+        Your hurt shows how exclusion can hide inside “group work.”
+
+  utter_bullying/p0068:
+  - text: >
+        Clothes and brands don’t measure worth. Mockery about style is class dressed up as comedy.
+        Your embarrassment is a mirror of their judgment, not your value.
+
+  utter_bullying/p0069:
+  - text: >
+        Constant targeting wears the spirit thin. Choosing absence over humiliation is a tired heart trying to survive.
+        Your exhaustion is a true response to daily harm—you weren’t made to be anyone’s joke.
+
+  utter_bullying/p0070:
+  - text: >
+        Quiet students often get labeled before they’re understood. Silence isn’t arrogance—it’s safety.
+        Your peace was mistaken for weakness, but you’ve done nothing wrong.
+
+  utter_bullying/p0071:
+  - text: >
+        Faith turned into ridicule cuts deep. Beliefs are personal, yet they were made public for laughs.
+        Your pain is valid—respect should never depend on sameness.
+
+  utter_bullying/p0072:
+  - text: >
+        Being mocked for where you’re from is prejudice in disguise. Accents tell stories, not ranks.
+        Your shame doesn’t belong to you—it was handed by ignorance.
+
+  utter_bullying/p0073:
+  - text: >
+        Handwriting isn’t a stage for humiliation. Notes were meant to record learning, not serve as entertainment.
+        Your embarrassment is real—ridicule hides where care should be.
+
+  utter_bullying/p0074:
+  - text: >
+        Posts are extensions of self, not open invitations for cruelty. What you shared was expression, not content for mockery.
+        Your discomfort online reflects a boundary they refused to see.
+
+  utter_bullying/p0075:
+  - text: >
+        Jokes about money carry class in every punchline. You were shamed for surviving differently.
+        Your worth was never tied to what you can afford.
+
+  utter_bullying/p0076:
+  - text: >
+        Difference should spark curiosity, not cruelty. Uniqueness is not a flaw—it’s just visible bravery.
+        Your isolation speaks more about their fear than your value.
+
+  utter_bullying/p0077:
+  - text: >
+        Skin jokes wear the mask of humor but speak the language of bias. Shades aren’t status.
+        Your hurt is valid—you were insulted for being human.
+
+  utter_bullying/p0078:
+  - text: >
+        Effort mocked becomes a cruel lesson. You built something they could only copy.
+        Your frustration shows how envy often hides behind laughter.
+
+  utter_bullying/p0079:
+  - text: >
+        Fear turning school into a battlefield takes away learning itself. Attendance shouldn’t cost safety.
+        Your avoidance isn’t weakness—it’s survival in disguise.
+
+  utter_bullying/p0080:
+  - text: >
+        Seniors using fear to earn respect forget what leadership means. Power shouldn’t humiliate.
+        Your fear walking past them is evidence of a broken hierarchy.
+
+  utter_bullying/p0081:
+  - text: >
+        Anonymous hate doesn’t hide accountability—it just delays it. Behind fake profiles are real choices.
+        Your anxiety online is justified; harassment doesn’t need a face to hurt.
+
+  utter_bullying/p0082:
+  - text: >
+        You shouldn’t be punished for your friendships. Loyalty isn’t a target.
+        Your pain shows how cruelty hunts in packs, not minds.
+
+  utter_bullying/p0083:
+  - text: >
+        Friends who joke past your comfort stop being safe spaces. Humor without care becomes harm.
+        Your discomfort is proof that “fun” turned into bullying.
+
+  utter_bullying/p0084:
+  - text: >
+        Voices deserve to exist without mockery. Sounding different isn’t a reason to shrink.
+        Your hesitation is what happens when confidence gets ridiculed.
+
+  utter_bullying/p0085:
+  - text: >
+        Studiousness became a label when others feared their own reflection. Discipline isn’t arrogance.
+        Your focus was never the problem—their insecurity was.
+
+  utter_bullying/p0086:
+  - text: >
+        Trends aren’t tickets for belonging. Simplicity doesn’t deserve mockery.
+        Your difference from the crowd is quiet strength, not backwardness.
+
+  utter_bullying/p0087:
+  - text: >
+        Body jokes disguised as “funny” still wound. Skin and hair were never meant for public commentary.
+        Your discomfort changing clothes is not overreaction—it’s protection.
+
+  utter_bullying/p0088:
+  - text: >
+        Art mocked becomes silence in color. Creativity should inspire, not embarrass.
+        Your hesitation to create again shows how deep ridicule cuts.
+
+  utter_bullying/p0089:
+  - text: >
+        Smell became a rumor when decency disappeared. Clean or not, no one deserves to be reduced to gossip.
+        Your shame isn’t yours—it was manufactured by cruelty.
+
+  utter_bullying/p0090:
+  - text: >
+        Games and sports should build confidence, not crush it. Laughing at someone’s pace isn’t teamwork.
+        Your dread of PE is a sign that the field stopped feeling safe.
+
+  utter_bullying/p0091:
+  - text: >
+        Prank calls turn nights into alarms. Harassment doesn’t need words—it uses sounds to unsettle.
+        Your fear at every ring shows how peace was taken from you.
+
+  utter_bullying/p0092:
+  - text: >
+        Braces are symbols of growth, not targets. Every smile hidden is a victory stolen.
+        Your hesitation to smile is the cost of someone’s shallow humor.
+
+  utter_bullying/p0093:
+  - text: >
+        Responsibility shouldn’t come with ridicule. Leadership mocked teaches silence to those who care.
+        Your fatigue from standing out is the echo of others’ insecurity.
+
+  utter_bullying/p0094:
+  - text: >
+        Fear of retaliation keeps truth quiet. Reporting shouldn’t feel dangerous.
+        Your silence is safety trying to protect itself, not cowardice.
+
+  utter_bullying/p0095:
+  - text: >
+        Orientation is identity, not entertainment. The jokes about who you are weren’t harmless.
+        Your hurt is valid—you were disrespected for simply existing.
+
+  utter_bullying/p0096:
+  - text: >
+        Family background isn’t a fair subject for mockery. Home stories should never become insults.
+        Your pain here is rooted in a betrayal of empathy.
+
+  utter_bullying/p0097:
+  - text: >
+        When those younger forget respect, it feels like the world turned upside down. Age doesn’t guarantee kindness.
+        Your confusion at their cruelty is completely valid.
+
+  utter_bullying/p0098:
+  - text: >
+        Edited images steal dignity pixel by pixel. Seeing your face turned into a joke is an invasion, not humor.
+        Your violation is real—what they did wasn’t harmless fun.
+
+  utter_bullying/p0099:
+  - text: >
+        Desk-side cruelty hides in whispers and flying paper. Daily small hurts still bleed.
+        Your tension in class shows how constant teasing corrodes safety.
+
+  utter_bullying/p0100:
+  - text: >
+        Pretending you’re fine is survival with a smile. Silence was armor when support was missing.
+        Your exhaustion now is honesty—pain deserves to be named.
+
+
+
+
+
   utter_grief_loss/p0001:
   - text: Missing someone after they’ve passed is a deep and ongoing pain. Grief takes
       time, and it’s okay to feel sad, angry, or confused. Allow yourself to remember
@@ -3173,6 +6749,267 @@ responses:
   - text: Healing looks different for everyone, and there’s no deadline. Keep reaching
       out for support, and allow yourself to heal at your own pace. You are not alone
       in your journey.
+
+  utter_grief_loss/p0049:
+  - text: >
+        Shock can linger long after the news. The mind protects itself by saying this can’t be real.
+        Your disbelief is a normal part of love trying to understand what happened.
+
+  utter_grief_loss/p0050:
+  - text: >
+        Emptiness is the outline grief leaves where presence used to be. Days can feel quiet and heavy at once.
+        Your hollow feeling is a true sign of how much they mattered.
+
+  utter_grief_loss/p0051:
+  - text: >
+        Regret often walks beside grief. The “what ifs” and “I should have” are love looking for another chance.
+        Your guilt doesn’t mean you failed—it means your care is still speaking.
+
+  utter_grief_loss/p0052:
+  - text: >
+        Tears arriving without warning are grief’s language. Emotion moves through you when words can’t.
+        Your sudden crying is not a weakness—it’s a release your body needed.
+
+  utter_grief_loss/p0053:
+  - text: >
+        Echoes of their voice are reminders of a bond that hasn’t disappeared. Memory keeps them close in its own way.
+        Your mind is holding on to what was safe and familiar.
+
+  utter_grief_loss/p0054:
+  - text: >
+        Places become heavy when they hold stories. Avoiding them isn’t denial—it’s protection while the wound is fresh.
+        Your steps are careful because your heart is tender.
+
+  utter_grief_loss/p0055:
+  - text: >
+        Anger is grief with its fists clenched. The world kept moving while yours stopped.
+        Your frustration is part of the loss speaking loudly.
+
+  utter_grief_loss/p0056:
+  - text: >
+        Focus fades when the heart is busy grieving. Pages blur because your energy is holding sorrow.
+        Your academic dip is not laziness—it’s a sign of how deep this runs.
+
+  utter_grief_loss/p0057:
+  - text: >
+        Holding their things is a way to hold the connection. Objects become bridges when presence is gone.
+        Your closeness to those items makes gentle sense.
+
+  utter_grief_loss/p0058:
+  - text: >
+        Fear of forgetting is another kind of grief. Memory feels fragile when love is strong.
+        Your checks and rechecks are love guarding what it can.
+
+  utter_grief_loss/p0059:
+  - text: >
+        Keeping quiet can feel safer than reopening the wound. Silence becomes armor.
+        Your choice to keep it inside shows how much you’ve been protecting yourself.
+
+  utter_grief_loss/p0060:
+  - text: >
+        Waves of sadness are grief’s tide. Calm moments don’t erase the next swell.
+        Your sudden heaviness is expected in a heart still adjusting.
+
+  utter_grief_loss/p0061:
+  - text: >
+        Carrying others while hurting yourself is a heavy kind of love. Strength doesn’t mean you aren’t aching.
+        Your effort to hold the family together is seen, even if it’s silent.
+
+  utter_grief_loss/p0062:
+  - text: >
+        Rituals can feel like too much when pain is fresh. Chapels and flowers press on the bruise.
+        Your urge to step back is a way of taking care of a tender heart.
+
+  utter_grief_loss/p0063:
+  - text: >
+        Old chats and photos become lifelines. Revisiting them keeps a thread to what felt safe.
+        Your nightly scroll is a quiet form of remembering.
+
+  utter_grief_loss/p0064:
+  - text: >
+        Joy around you can throw your loss into sharper focus. Comparison deepens the ache.
+        Your jealousy and sadness are human responses to a changed life.
+
+  utter_grief_loss/p0065:
+  - text: >
+        Rooms hold time like a pause button. Leaving things untouched can feel like keeping them close.
+        Your hesitation to enter is respect for what that space means to you.
+
+  utter_grief_loss/p0066:
+  - text: >
+        Numbness is the body’s way of giving you a break from overwhelming pain. Feeling blank is still a feeling.
+        Your quiet inside is part of the path through grief.
+
+  utter_grief_loss/p0067:
+  - text: >
+        Guilt after a laugh shows how loyal your heart is. Joy doesn’t erase love—it proves it can still exist alongside pain.
+        Your mixed feelings are honest, not wrong.
+
+  utter_grief_loss/p0068:
+  - text: >
+        Keeping up a brave face is exhausting. Masks get heavy when the hurt stays.
+        Your tiredness is the cost of carrying pain alone for too long.
+
+  utter_grief_loss/p0069:
+  - text: >
+        Birthdays can reopen the quietest places in the heart. The calendar remembers even when you wish it wouldn’t.
+        Your heaviness around the date shows how much that life still matters to you.
+
+  utter_grief_loss/p0070:
+  - text: >
+        Dreams that bring them back can feel like gifts that vanish at sunrise. The second goodbye in the morning is its own ache.
+        Your heartbreak after waking is a tender sign of love that hasn’t faded.
+
+  utter_grief_loss/p0071:
+  - text: >
+        Music keeps memories alive in a few notes. A chorus can carry a whole room full of moments.
+        Your tears to certain songs are proof that those moments still live in you.
+
+  utter_grief_loss/p0072:
+  - text: >
+        A house changes shape after a loss. Silence moves into the spaces where their voice used to be.
+        Your fear of drifting apart is the heart asking to keep the threads that remain.
+
+  utter_grief_loss/p0073:
+  - text: >
+        Exams ask for focus your grief keeps borrowing. Pages blur because your mind is visiting someone it loves.
+        Your struggle in tests is not a lack of effort—it’s a measure of the weight you carry.
+
+  utter_grief_loss/p0074:
+  - text: >
+        Joy can feel complicated when grief sits beside it. Smiles arrive and guilt follows behind.
+        Your mixed feelings don’t betray your love—they reveal its depth.
+
+  utter_grief_loss/p0075:
+  - text: >
+        Online spaces become small memorials when the person is gone. Clicking through posts is a way of staying close.
+        Your rituals on their timeline are gentle bridges to what mattered.
+
+  utter_grief_loss/p0076:
+  - text: >
+        Scents travel faster than thought and land straight in memory. One breath and you’re back in a moment you miss.
+        Your stillness when a scent appears makes deep sense.
+
+  utter_grief_loss/p0077:
+  - text: >
+        Distance from friends can be a shield while the wound is open. Protecting your energy is not selfish.
+        Your quiet plans are a way of making room for your heart.
+
+  utter_grief_loss/p0078:
+  - text: >
+        Anger at systems and places is grief searching for fairness. White walls can hold too many hard moments.
+        Your resentment is part of processing something that should never have hurt this much.
+
+  utter_grief_loss/p0079:
+  - text: >
+        The mind replays the hardest day to make sense of the senseless. Details return because love wants answers.
+        Your looping memory is a sign of impact, not weakness.
+
+  utter_grief_loss/p0080:
+  - text: >
+        Grief doesn’t follow other people’s timelines. Being told to move on adds pressure to a heart already carrying enough.
+        Your pace is valid—love doesn’t expire.
+
+  utter_grief_loss/p0081:
+  - text: >
+        Unread messages and saved voicemails are threads back to a voice you miss. Holding on is a form of honoring.
+        Your reluctance to delete is a kind of care.
+
+  utter_grief_loss/p0082:
+  - text: >
+        Loss can make you feel older than your age. The gap between your world and your friends’ can feel wide.
+        Your sense of being different is a true reflection of what you’ve lived.
+
+  utter_grief_loss/p0083:
+  - text: >
+        Habit reaches for the person long after they’re gone. The phone lights up with an instinct your heart taught your hands.
+        Your shock when you remember is another wave of the same love.
+
+  utter_grief_loss/p0084:
+  - text: >
+        Objects become anchors when the person is no longer here. Letting go can feel like letting go of them.
+        Your careful hands are proof of how sacred that bond is.
+
+  utter_grief_loss/p0085:
+  - text: >
+        Anniversaries gather time into one sharp point. The body keeps the date even without a reminder.
+        Your quiet on those days is respect for what that life means.
+
+  utter_grief_loss/p0086:
+  - text: >
+        Telling the story again can reopen it. Correcting others asks your voice to carry more than it should.
+        Your dread is understandable—protecting yourself matters too.
+
+  utter_grief_loss/p0087:
+  - text: >
+        Handwriting holds a person’s rhythm. Curves and lines feel like touch you can still see.
+        Your care for those papers shows how memory lives on the page.
+
+  utter_grief_loss/p0088:
+  - text: >
+        Holidays highlight empty chairs as much as lights. Celebration and sorrow can share a room.
+        Your choice to step back is a kind boundary while the wound is tender.
+
+  utter_grief_loss/p0089:
+  - text: >
+        Wearing their clothes can feel like being held. Fabric carries warmth that memory recognizes.
+        Your comfort in those items is a gentle way of staying near.
+
+  utter_grief_loss/p0090:
+  - text: >
+        Survivor’s guilt is grief looking for balance where none exists. Being alive isn’t a betrayal.
+        Your discomfort with good days is the echo of deep love.
+
+  utter_grief_loss/p0091:
+  - text: >
+        Half-finished tasks show how grief pauses the mind mid-step. Focus slips because your heart is busy elsewhere.
+        Your incomplete work is a reflection of the load, not your ability.
+
+  utter_grief_loss/p0092:
+  - text: >
+        Quiet visits can steady a shaken heart. Names on stone hold stories that don’t end.
+        Your time by their resting place is a soft conversation without words.
+
+  utter_grief_loss/p0093:
+  - text: >
+        Avoiding their name can feel like erasing them. Remembering out loud is a way of keeping them here.
+        Your hurt at the silence is a love wanting to be honored.
+
+  utter_grief_loss/p0094:
+  - text: >
+        Routines keep reaching for someone who isn’t there. Habits bump into absence and ache.
+        Your startle at the door is the body remembering before the mind catches up.
+
+  utter_grief_loss/p0095:
+  - text: >
+        Paperwork can feel cold against a warm grief. Forms don’t see the person behind the lines.
+        Your overwhelm with requirements is completely understandable.
+
+  utter_grief_loss/p0096:
+  - text: >
+        Packing a room asks you to make decisions your heart isn’t ready for. Each item carries a story.
+        Your pause is respect for a life that filled this space.
+
+  utter_grief_loss/p0097:
+  - text: >
+        Panic in crowded rooms is grief turning into a physical wave. Breath gets small when memories get big.
+        Your step outside is care for a body that needs space.
+
+  utter_grief_loss/p0098:
+  - text: >
+        Invisible grief still weighs the same. Quiet pain doesn’t mean small pain.
+        Your hidden heaviness is valid even when others can’t see it.
+
+  utter_grief_loss/p0099:
+  - text: >
+        New memories can feel like walking ahead without a hand you used to hold. The guilt is love afraid of being left behind.
+        Your hesitation is tender and human.
+
+  utter_grief_loss/p0100:
+  - text: >
+        Daily grieving is exhausting in a way few things are. Carrying absence takes strength you don’t always feel.
+        Your weariness makes sense—love leaves an ache that asks to be honored.
+
 
   utter_coping_academic_pressure:
   - text: 'School work can pile up. Try these:
